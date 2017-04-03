@@ -33,6 +33,8 @@ namespace ORMSolutions.ORMArchitect.Framework
 	[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Framework.FrameworkDomainModel.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Framework.FrameworkDomainModel), "ORMSolutions.ORMArchitect.Framework.GeneratedCode.FrameworkDomainModelResx")]
 	[DslDesign::DescriptionResource("ORMSolutions.ORMArchitect.Framework.FrameworkDomainModel.Description", typeof(global::ORMSolutions.ORMArchitect.Framework.FrameworkDomainModel), "ORMSolutions.ORMArchitect.Framework.GeneratedCode.FrameworkDomainModelResx")]
 	[global::System.CLSCompliant(true)]
+	[DslModeling::DependsOnDomainModel(typeof(global::Microsoft.VisualStudio.Modeling.CoreDomainModel))]
+	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Generated code.")]
 	[DslModeling::DomainObjectId("f60bc3f1-c38e-4c7d-9ee5-9211db26cb45")]
 	public partial class FrameworkDomainModel : DslModeling::DomainModel
 	{
@@ -50,8 +52,22 @@ namespace ORMSolutions.ORMArchitect.Framework
 		public FrameworkDomainModel(DslModeling::Store store)
 			: base(store, DomainModelId)
 		{
+			// Call the partial method to allow any required serialization setup to be done.
+			this.InitializeSerialization(store);		
 		}
 		
+	
+		///<Summary>
+		/// Defines a partial method that will be called from the constructor to
+		/// allow any necessary serialization setup to be done.
+		///</Summary>
+		///<remarks>
+		/// For a DSL created with the DSL Designer wizard, an implementation of this 
+		/// method will be generated in the GeneratedCode\SerializationHelper.cs class.
+		///</remarks>
+		partial void InitializeSerialization(DslModeling::Store store);
+	
+	
 		#endregion
 		#region Domain model reflection
 			
@@ -59,6 +75,7 @@ namespace ORMSolutions.ORMArchitect.Framework
 		/// Gets the list of generated domain model types (classes, rules, relationships).
 		/// </summary>
 		/// <returns>List of types.</returns>
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Generated code.")]	
 		protected sealed override global::System.Type[] GetGeneratedDomainModelTypes()
 		{
 			return new global::System.Type[]
@@ -70,6 +87,7 @@ namespace ORMSolutions.ORMArchitect.Framework
 		/// Gets the list of generated domain properties.
 		/// </summary>
 		/// <returns>List of property data.</returns>
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Generated code.")]	
 		protected sealed override DomainMemberInfo[] GetGeneratedDomainProperties()
 		{
 			return new DomainMemberInfo[]
@@ -88,6 +106,7 @@ namespace ORMSolutions.ORMArchitect.Framework
 		/// <param name="propertyAssignments">New element property assignments.</param>
 		/// <returns>Created element.</returns>
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Generated code.")]	
 		public sealed override DslModeling::ModelElement CreateElement(DslModeling::Partition partition, global::System.Type elementType, DslModeling::PropertyAssignment[] propertyAssignments)
 		{
 			if (elementType == null) throw new global::System.ArgumentNullException("elementType");
@@ -100,7 +119,12 @@ namespace ORMSolutions.ORMArchitect.Framework
 			int index;
 			if (!createElementMap.TryGetValue(elementType, out index))
 			{
-				throw new global::System.ArgumentException("elementType is not recognized as a type of domain class which belongs to this domain model.");
+				// construct exception error message		
+				string exceptionError = string.Format(
+								global::System.Globalization.CultureInfo.CurrentCulture,
+								global::ORMSolutions.ORMArchitect.Framework.FrameworkDomainModel.SingletonResourceManager.GetString("UnrecognizedElementType"),
+								elementType.Name);
+				throw new global::System.ArgumentException(exceptionError, "elementType");
 			}
 			switch (index)
 			{
@@ -122,7 +146,7 @@ namespace ORMSolutions.ORMArchitect.Framework
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
 		public sealed override DslModeling::ElementLink CreateElementLink(DslModeling::Partition partition, global::System.Type elementLinkType, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
 		{
-			if (elementLinkType == null) throw new global::System.ArgumentNullException("elementType");
+			if (elementLinkType == null) throw new global::System.ArgumentNullException("elementLinkType");
 			if (roleAssignments == null) throw new global::System.ArgumentNullException("roleAssignments");
 	
 			if (createElementLinkMap == null)
@@ -132,7 +156,13 @@ namespace ORMSolutions.ORMArchitect.Framework
 			int index;
 			if (!createElementLinkMap.TryGetValue(elementLinkType, out index))
 			{
-				throw new global::System.ArgumentException("elementLinkType is not recognized as a type of domain relationship which belongs to this domain model.");
+				// construct exception error message
+				string exceptionError = string.Format(
+								global::System.Globalization.CultureInfo.CurrentCulture,
+								global::ORMSolutions.ORMArchitect.Framework.FrameworkDomainModel.SingletonResourceManager.GetString("UnrecognizedElementLinkType"),
+								elementLinkType.Name);
+				throw new global::System.ArgumentException(exceptionError, "elementLinkType");
+			
 			}
 			switch (index)
 			{
@@ -215,6 +245,7 @@ namespace ORMSolutions.ORMArchitect.Framework
 				{
 					DslModeling::ChainingElementVisitorFilter copyFilter = new DslModeling::ChainingElementVisitorFilter();
 					copyFilter.AddFilter(new FrameworkCopyClosure());
+					copyFilter.AddFilter(new DslModeling::CoreCopyClosure());
 					
 					FrameworkDomainModel.copyClosure = copyFilter;
 				}
@@ -233,6 +264,7 @@ namespace ORMSolutions.ORMArchitect.Framework
 				{
 					DslModeling::ChainingElementVisitorFilter removeFilter = new DslModeling::ChainingElementVisitorFilter();
 					removeFilter.AddFilter(new FrameworkDeleteClosure());
+					removeFilter.AddFilter(new DslModeling::CoreDeleteClosure());
 		
 					FrameworkDomainModel.removeClosure = removeFilter;
 				}
@@ -260,12 +292,13 @@ namespace ORMSolutions.ORMArchitect.Framework
 	/// <summary>
 	/// Base class for remove closure visitor filter
 	/// </summary>
+	[global::System.CLSCompliant(true)]
 	public partial class FrameworkDeleteClosureBase : DslModeling::IElementVisitorFilter
 	{
 		/// <summary>
 		/// DomainRoles
 		/// </summary>
-		private global::System.Collections.Generic.Dictionary<global::System.Guid, bool> domainRoles;
+		private global::System.Collections.Specialized.HybridDictionary domainRoles;
 		/// <summary>
 		/// Constructor
 		/// </summary>
@@ -298,18 +331,19 @@ namespace ORMSolutions.ORMArchitect.Framework
 		/// <returns></returns>
 		public virtual DslModeling::VisitorFilterResult ShouldVisitRolePlayer(DslModeling::ElementWalker walker, DslModeling::ModelElement sourceElement, DslModeling::ElementLink elementLink, DslModeling::DomainRoleInfo targetDomainRole, DslModeling::ModelElement targetRolePlayer)
 		{
-			return this.DomainRoles.ContainsKey(targetDomainRole.Id) ? DslModeling::VisitorFilterResult.Yes : DslModeling::VisitorFilterResult.DoNotCare;
+			if (targetDomainRole == null) throw new global::System.ArgumentNullException("targetDomainRole");
+			return this.DomainRoles.Contains(targetDomainRole.Id) ? DslModeling::VisitorFilterResult.Yes : DslModeling::VisitorFilterResult.DoNotCare;
 		}
 		/// <summary>
 		/// DomainRoles
 		/// </summary>
-		private global::System.Collections.Generic.Dictionary<global::System.Guid, bool> DomainRoles
+		private global::System.Collections.Specialized.HybridDictionary DomainRoles
 		{
 			get
 			{
 				if (this.domainRoles == null)
 				{
-					this.domainRoles = new global::System.Collections.Generic.Dictionary<global::System.Guid, bool>();
+					this.domainRoles = new global::System.Collections.Specialized.HybridDictionary();
 				}
 				return this.domainRoles;
 			}
@@ -332,61 +366,15 @@ namespace ORMSolutions.ORMArchitect.Framework
 	/// <summary>
 	/// Base class for copy closure visitor filter
 	/// </summary>
-	public partial class FrameworkCopyClosureBase : DslModeling::IElementVisitorFilter
+	[global::System.CLSCompliant(true)]
+	public partial class FrameworkCopyClosureBase : DslModeling::CopyClosureFilter, DslModeling::IElementVisitorFilter
 	{
-		/// <summary>
-		/// DomainRoles
-		/// </summary>
-		private global::System.Collections.Generic.Dictionary<global::System.Guid, bool> domainRoles;
 		/// <summary>
 		/// Constructor
 		/// </summary>
-		public FrameworkCopyClosureBase()
+		public FrameworkCopyClosureBase():base()
 		{
-			#region Initialize DomainData Table
-			#endregion
 		}
-		/// <summary>
-		/// Called to ask the filter if a particular relationship from a source element should be included in the traversal
-		/// </summary>
-		/// <param name="walker">ElementWalker traversing the model</param>
-		/// <param name="sourceElement">Model Element playing the source role</param>
-		/// <param name="sourceRoleInfo">DomainRoleInfo of the role that the source element is playing in the relationship</param>
-		/// <param name="domainRelationshipInfo">DomainRelationshipInfo for the ElementLink in question</param>
-		/// <param name="targetRelationship">Relationship in question</param>
-		/// <returns>Yes if the relationship should be traversed</returns>
-		public virtual DslModeling::VisitorFilterResult ShouldVisitRelationship(DslModeling::ElementWalker walker, DslModeling::ModelElement sourceElement, DslModeling::DomainRoleInfo sourceRoleInfo, DslModeling::DomainRelationshipInfo domainRelationshipInfo, DslModeling::ElementLink targetRelationship)
-		{
-			return this.DomainRoles.ContainsKey(sourceRoleInfo.Id) ? DslModeling::VisitorFilterResult.Yes : DslModeling::VisitorFilterResult.DoNotCare;
-		}
-		/// <summary>
-		/// Called to ask the filter if a particular role player should be Visited during traversal
-		/// </summary>
-		/// <param name="walker">ElementWalker traversing the model</param>
-		/// <param name="sourceElement">Model Element playing the source role</param>
-		/// <param name="elementLink">Element Link that forms the relationship to the role player in question</param>
-		/// <param name="targetDomainRole">DomainRoleInfo of the target role</param>
-		/// <param name="targetRolePlayer">Model Element that plays the target role in the relationship</param>
-		/// <returns></returns>
-		public virtual DslModeling::VisitorFilterResult ShouldVisitRolePlayer(DslModeling::ElementWalker walker, DslModeling::ModelElement sourceElement, DslModeling::ElementLink elementLink, DslModeling::DomainRoleInfo targetDomainRole, DslModeling::ModelElement targetRolePlayer)
-		{
-			return this.DomainRoles.ContainsKey(targetDomainRole.Id) ? DslModeling::VisitorFilterResult.Yes : DslModeling::VisitorFilterResult.DoNotCare;
-		}
-		/// <summary>
-		/// DomainRoles
-		/// </summary>
-		private global::System.Collections.Generic.Dictionary<global::System.Guid, bool> DomainRoles
-		{
-			get
-			{
-				if (this.domainRoles == null)
-				{
-					this.domainRoles = new global::System.Collections.Generic.Dictionary<global::System.Guid, bool>();
-				}
-				return this.domainRoles;
-			}
-		}
-	
 	}
 	#endregion
 		

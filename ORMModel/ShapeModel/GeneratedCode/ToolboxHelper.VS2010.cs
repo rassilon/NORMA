@@ -174,14 +174,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 			global::System.Globalization.CultureInfo resourceCulture = global::System.Globalization.CultureInfo.CurrentUICulture;
 			switch(itemId)
 			{
-				case "EntityTypeToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.EntityTypeToolboxItem":
 					// Add EntityType shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"EntityTypeToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.EntityTypeToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						1, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("EntityTypeToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EntityTypeToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"EntityType", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("EntityTypeToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -190,14 +190,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "ValueTypeToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.ValueTypeToolboxItem":
 					// Add ValueType shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"ValueTypeToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.ValueTypeToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						2, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("ValueTypeToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ValueTypeToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"ValueType", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("ValueTypeToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -206,14 +206,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "ObjectifiedFactTypeToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.ObjectifiedFactTypeToolboxItem":
 					// Add ObjectifiedFactType shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"ObjectifiedFactTypeToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.ObjectifiedFactTypeToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						3, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("ObjectifiedFactTypeToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ObjectifiedFactTypeToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"ObjectifiedFactType", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("ObjectifiedFactTypeToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -222,14 +222,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "UnaryFactTypeToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.UnaryFactTypeToolboxItem":
 					// Add UnaryFactType shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"UnaryFactTypeToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.UnaryFactTypeToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						4, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("UnaryFactTypeToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("UnaryFactTypeToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"UnaryFactType", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("UnaryFactTypeToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -238,14 +238,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "BinaryFactTypeToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.BinaryFactTypeToolboxItem":
 					// Add BinaryFactType shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"BinaryFactTypeToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.BinaryFactTypeToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						5, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("BinaryFactTypeToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("BinaryFactTypeToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"BinaryFactType", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("BinaryFactTypeToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -254,14 +254,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "TernaryFactTypeToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.TernaryFactTypeToolboxItem":
 					// Add TernaryFactType shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"TernaryFactTypeToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.TernaryFactTypeToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						6, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("TernaryFactTypeToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("TernaryFactTypeToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"TernaryFactType", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("TernaryFactTypeToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -270,15 +270,15 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "RoleConnectorToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.RoleConnectorToolboxItem":
 
 					// Add RoleConnector connector tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"RoleConnectorToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.RoleConnectorToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						7, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("RoleConnectorToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("RoleConnectorToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"RoleConnector", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("RoleConnectorToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -288,15 +288,15 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 							new global::System.ComponentModel.ToolboxItemFilterAttribute(RoleConnectorFilterString)
 						});
 					break;
-				case "SubtypeConnectorToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.SubtypeConnectorToolboxItem":
 
 					// Add SubtypeConnector connector tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"SubtypeConnectorToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.SubtypeConnectorToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						8, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("SubtypeConnectorToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("SubtypeConnectorToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"SubtypeConnector", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("SubtypeConnectorToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -306,14 +306,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 							new global::System.ComponentModel.ToolboxItemFilterAttribute(SubtypeConnectorFilterString)
 						});
 					break;
-				case "InternalUniquenessConstraintToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.InternalUniquenessConstraintToolboxItem":
 					// Add InternalUniquenessConstraint shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"InternalUniquenessConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.InternalUniquenessConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						9, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("InternalUniquenessConstraintToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("InternalUniquenessConstraintToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"InternalUniquenessConstraint", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("InternalUniquenessConstraintToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -322,14 +322,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "ExternalUniquenessConstraintToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.ExternalUniquenessConstraintToolboxItem":
 					// Add ExternalUniquenessConstraint shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"ExternalUniquenessConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.ExternalUniquenessConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						10, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("ExternalUniquenessConstraintToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ExternalUniquenessConstraintToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"ExternalUniquenessConstraint", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("ExternalUniquenessConstraintToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -338,14 +338,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "EqualityConstraintToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.EqualityConstraintToolboxItem":
 					// Add EqualityConstraint shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"EqualityConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.EqualityConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						11, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("EqualityConstraintToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EqualityConstraintToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"EqualityConstraint", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("EqualityConstraintToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -354,14 +354,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "ExclusionConstraintToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.ExclusionConstraintToolboxItem":
 					// Add ExclusionConstraint shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"ExclusionConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.ExclusionConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						12, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("ExclusionConstraintToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ExclusionConstraintToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"ExclusionConstraint", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("ExclusionConstraintToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -370,14 +370,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "InclusiveOrConstraintToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.InclusiveOrConstraintToolboxItem":
 					// Add InclusiveOrConstraint shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"InclusiveOrConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.InclusiveOrConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						13, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("InclusiveOrConstraintToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("InclusiveOrConstraintToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"InclusiveOrConstraint", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("InclusiveOrConstraintToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -386,14 +386,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "ExclusiveOrConstraintToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.ExclusiveOrConstraintToolboxItem":
 					// Add ExclusiveOrConstraint shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"ExclusiveOrConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.ExclusiveOrConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						14, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("ExclusiveOrConstraintToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ExclusiveOrConstraintToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"ExclusiveOrConstraint", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("ExclusiveOrConstraintToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -402,14 +402,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "SubsetConstraintToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.SubsetConstraintToolboxItem":
 					// Add SubsetConstraint shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"SubsetConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.SubsetConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						15, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("SubsetConstraintToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("SubsetConstraintToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"SubsetConstraint", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("SubsetConstraintToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -418,14 +418,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "FrequencyConstraintToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.FrequencyConstraintToolboxItem":
 					// Add FrequencyConstraint shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"FrequencyConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.FrequencyConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						16, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("FrequencyConstraintToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("FrequencyConstraintToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"FrequencyConstraint", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("FrequencyConstraintToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -434,14 +434,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "RingConstraintToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.RingConstraintToolboxItem":
 					// Add RingConstraint shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"RingConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.RingConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						17, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("RingConstraintToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("RingConstraintToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"RingConstraint", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("RingConstraintToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -450,14 +450,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "ValueComparisonConstraintToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.ValueComparisonConstraintToolboxItem":
 					// Add ValueComparisonConstraint shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"ValueComparisonConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.ValueComparisonConstraintToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						18, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("ValueComparisonConstraintToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ValueComparisonConstraintToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"ValueComparisonConstraint", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("ValueComparisonConstraintToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -466,15 +466,15 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "ExternalConstraintConnectorToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.ExternalConstraintConnectorToolboxItem":
 
 					// Add ExternalConstraintConnector connector tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"ExternalConstraintConnectorToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.ExternalConstraintConnectorToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						19, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("ExternalConstraintConnectorToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ExternalConstraintConnectorToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"ExternalConstraintConnector", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("ExternalConstraintConnectorToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -484,14 +484,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 							new global::System.ComponentModel.ToolboxItemFilterAttribute(ExternalConstraintConnectorFilterString)
 						});
 					break;
-				case "ModelNoteToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.ModelNoteToolboxItem":
 					// Add ModelNote shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"ModelNoteToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.ModelNoteToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						20, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("ModelNoteToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ModelNoteToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"ModelNote", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("ModelNoteToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
@@ -500,15 +500,15 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "ModelNoteConnectorToolboxItem":
+				case "ORMSolutions.ORMArchitect.Core.Shell.ModelNoteConnectorToolboxItem":
 
 					// Add ModelNoteConnector connector tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"ModelNoteConnectorToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"ORMSolutions.ORMArchitect.Core.Shell.ModelNoteConnectorToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						21, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("ModelNoteConnectorToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ModelNoteConnectorToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
-						"ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						"ORMSolutions.ORMArchitect.Core.Shell.ORM DesignerToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
 						resourceManager.GetString("ORM DesignerToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
 						"ModelNoteConnector", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("ModelNoteConnectorToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.

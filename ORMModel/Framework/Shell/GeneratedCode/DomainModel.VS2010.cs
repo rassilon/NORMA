@@ -30,10 +30,12 @@ namespace ORMSolutions.ORMArchitect.Framework.Shell
 	/// DomainModel DiagramDisplayDomainModel
 	/// Reorder diagrams and cache diagram positions
 	/// </summary>
+	[DslModeling::ExtendsDomainModel("91D59B16-E488-4A28-8D51-59273AD5BF2E"/*Microsoft.VisualStudio.Modeling.Diagrams.CoreDesignSurfaceDomainModel*/)]
 	[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Framework.Shell.DiagramDisplayDomainModel.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Framework.Shell.DiagramDisplayDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.DiagramDisplayDomainModelResx")]
 	[DslDesign::DescriptionResource("ORMSolutions.ORMArchitect.Framework.Shell.DiagramDisplayDomainModel.Description", typeof(global::ORMSolutions.ORMArchitect.Framework.Shell.DiagramDisplayDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.DiagramDisplayDomainModelResx")]
 	[global::System.CLSCompliant(true)]
 	[DslModeling::DependsOnDomainModel(typeof(global::Microsoft.VisualStudio.Modeling.CoreDomainModel))]
+	//[DslModeling::DependsOnDomainModel(typeof(global::_SystemCoreDomainModel))]
 	[DslModeling::DependsOnDomainModel(typeof(global::Microsoft.VisualStudio.Modeling.Diagrams.CoreDesignSurfaceDomainModel))]
 	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Generated code.")]
 	[DslModeling::DomainObjectId("b5149d2b-5b64-49d1-aca0-f8dde50e2c24")]

@@ -277,8 +277,7 @@ namespace ORMSolutions.ORMArchitect.Framework.Shell
 					// set to CustomStorage. Please provide the SetCenterPointValue()
 					// method on the domain class.
 					element.SetCenterPointValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -368,8 +367,7 @@ namespace ORMSolutions.ORMArchitect.Framework.Shell
 					// set to CustomStorage. Please provide the SetZoomFactorValue()
 					// method on the domain class.
 					element.SetZoomFactorValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -458,8 +456,7 @@ namespace ORMSolutions.ORMArchitect.Framework.Shell
 					// set to CustomStorage. Please provide the SetIsActiveDiagramValue()
 					// method on the domain class.
 					element.SetIsActiveDiagramValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}

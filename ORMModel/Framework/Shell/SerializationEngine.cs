@@ -223,34 +223,56 @@ namespace ORMSolutions.ORMArchitect.Framework.Shell
 		protected CustomSerializedInfo()
 		{
 		}
-		/// <summary>
-		/// Create customized serialization info
-		/// </summary>
-		/// <param name="customPrefix">The custom prefix to use.</param>
-		/// <param name="customName">The custom name to use.</param>
-		/// <param name="customNamespace">The custom namespace to use.</param>
-		/// <param name="doubleTagName">The name of the double tag.</param>
+
+        private Info info;
+
+        /// <summary>
+        /// Custom Serialized Info
+        /// </summary>
+        /// <param name="customPrefix"></param>
+        /// <param name="customName"></param>
+        /// <param name="customNamespace"></param>
+        /// <param name="doubleTagName"></param>
 		protected CustomSerializedInfo(string customPrefix, string customName, string customNamespace, string doubleTagName)
 		{
-			myCustomPrefix = customPrefix;
-			myCustomName = customName;
-			myCustomNamespace = customNamespace;
-			myDoubleTagName = doubleTagName;
-		}
+            info = new Info(customPrefix, customName, customNamespace, doubleTagName);
+        }
 
-		private readonly string myCustomPrefix;
-		private readonly string myCustomName;
-		private readonly string myCustomNamespace;
-		private readonly string myDoubleTagName;
+        // converted to struct to prevent unboxing
+        /// <summary>
+        /// struct used to encapsultate prefix, name, namespace, and tagname
+        /// </summary>
+        private struct Info
+        {
+            public readonly string myCustomPrefix;
+            public readonly string myCustomName;
+            public readonly string myCustomNamespace;
+            public readonly string myDoubleTagName;
 
-		/// <summary>
-		/// Return true if no values are set in the structure
-		/// </summary>
-		public virtual bool IsDefault
+            /// <summary>
+            /// Create customized serialization info
+            /// </summary>
+            /// <param name="customPrefix">The custom prefix to use.</param>
+            /// <param name="customName">The custom name to use.</param>
+            /// <param name="customNamespace">The custom namespace to use.</param>
+            /// <param name="doubleTagName">The name of the double tag.</param>
+            public Info(string customPrefix, string customName, string customNamespace, string doubleTagName)
+            {
+                this.myCustomPrefix = customPrefix;
+                this.myCustomName = customName;
+                this.myCustomNamespace = customNamespace;
+                this.myDoubleTagName = doubleTagName;
+            }
+        }
+
+        /// <summary>
+        /// Return true if no values are set in the structure
+        /// </summary>
+        public virtual bool IsDefault
 		{
 			get
 			{
-				return myCustomPrefix == null && myCustomName == null && myCustomNamespace == null && myDoubleTagName == null;
+				return info.myCustomPrefix == null && info.myCustomName == null && info.myCustomNamespace == null && info.myDoubleTagName == null;
 			}
 		}
 
@@ -260,14 +282,14 @@ namespace ORMSolutions.ORMArchitect.Framework.Shell
 		/// <value>The custom prefix to use.</value>
 		public string CustomPrefix
 		{
-			get { return myCustomPrefix; }
+			get { return info.myCustomPrefix; }
 		}
 		/// <summary>
 		/// The custom name to use.
 		/// </summary>
 		public string CustomName
 		{
-			get { return myCustomName; }
+			get { return info.myCustomName; }
 		}
 		/// <summary>
 		/// The custom namespace to use.
@@ -275,7 +297,7 @@ namespace ORMSolutions.ORMArchitect.Framework.Shell
 		/// <value>The custom namespace to use.</value>
 		public string CustomNamespace
 		{
-			get { return myCustomNamespace; }
+			get { return info.myCustomNamespace; }
 		}
 		/// <summary>
 		/// The name of the double tag.
@@ -283,7 +305,7 @@ namespace ORMSolutions.ORMArchitect.Framework.Shell
 		/// <value>The name of the double tag.</value>
 		public string DoubleTagName
 		{
-			get { return myDoubleTagName; }
+			get { return info.myDoubleTagName; }
 		}
 	}
 	#endregion // CustomSerializedInfo class
