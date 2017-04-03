@@ -31,11 +31,15 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 	/// DomainModel ORMShapeDomainModel
 	/// Description for ORMSolutions.ORMArchitect.Core.ShapeModel.ORMShape
 	/// </summary>
+	[DslModeling::ExtendsDomainModel("F60BC3F1-C38E-4C7D-9EE5-9211DB26CB45"/*ORMSolutions.ORMArchitect.Framework.FrameworkDomainModel*/)]
+	[DslModeling::ExtendsDomainModel("3EAE649F-E654-4D04-8289-C25D2C0322D8"/*ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel*/)]
+	[DslModeling::ExtendsDomainModel("91D59B16-E488-4A28-8D51-59273AD5BF2E"/*Microsoft.VisualStudio.Modeling.Diagrams.CoreDesignSurfaceDomainModel*/)]
 	[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ShapeModel.ORMShapeDomainModel.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ShapeModel.ORMShapeDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.ShapeDomainModelResx")]
 	[DslDesign::DescriptionResource("ORMSolutions.ORMArchitect.Core.ShapeModel.ORMShapeDomainModel.Description", typeof(global::ORMSolutions.ORMArchitect.Core.ShapeModel.ORMShapeDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.ShapeDomainModelResx")]
 	[global::System.CLSCompliant(true)]
 	[DslModeling::DependsOnDomainModel(typeof(global::Microsoft.VisualStudio.Modeling.CoreDomainModel))]
 	[DslModeling::DependsOnDomainModel(typeof(global::Microsoft.VisualStudio.Modeling.Diagrams.CoreDesignSurfaceDomainModel))]
+	//[DslModeling::DependsOnDomainModel(typeof(global::_SystemCoreDomainModel))]
 	[DslModeling::DependsOnDomainModel(typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel))]
 	[DslModeling::DependsOnDomainModel(typeof(global::ORMSolutions.ORMArchitect.Framework.FrameworkDomainModel))]
 	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Generated code.")]

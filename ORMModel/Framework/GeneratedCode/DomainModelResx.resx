@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ORMSolutions.ORMArchitect.Framework.FrameworkDomainModel.Description" xml:space="preserve">
     <value>Description for ORMSolutions.ORMArchitect.Framework.Framework</value>
@@ -132,6 +132,14 @@
   <data name="ORMSolutions.ORMArchitect.Framework.DelayValidateSignal.DisplayName" xml:space="preserve">
     <value>DelayValidateSignal</value>
     <comment>DisplayName for DomainClass &apos;DelayValidateSignal&apos;</comment>
+  </data>
+  <data name="UnrecognizedElementType" xml:space="preserve">
+    <value>ElementType {0} is not recognized as a type of domain class which belongs to this domain model.</value>
+    <comment>Incorrect ElementType passed in to Model.CreateElement method</comment>
+  </data>
+  <data name="UnrecognizedElementLinkType" xml:space="preserve">
+    <value>ElementLinkType {0} is not recognized as a type of domain relationship which belongs to this domain model.</value>
+    <comment>Incorrect ElementLinkType passed in to Model.CreateElementLink method</comment>
   </data>
   <data name="AmbiguousSchema" xml:space="preserve">
     <value>More than one schema found for target namespace &apos;{0}&apos;, use the first one at &apos;{1}&apos;.</value>
@@ -207,6 +215,23 @@ A DomainClass can be serialized as a moniker only if
   <data name="VersionMismatch" xml:space="preserve">
     <value>Unsupported version &apos;{0}&apos;, can only support &apos;{1}&apos;.</value>
     <comment>Serialization Error: VersionMismatch</comment>
+  </data>
+  <data name="CannotCloseExistingDiagramDocument" xml:space="preserve">
+    <value>Diagram file &apos;{0}&apos; cannot be closed.</value>
+    <comment>User cancel closing diagram file. Hence, the DSL model file cannot be opened</comment>
+  </data>
+  <data name="BindingErrorOccurred" xml:space="preserve">
+    <value>Extensions for this designer may not be found as a MEF binding error has occurred. The error that occurred was:
+{0}</value>
+    <comment>MEF binding error occurred - exception message being logged in the error window so the user is aware.</comment>
+  </data>
+  <data name="InvalidSaveRootElementType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid root element type.</value>
+    <comment>Exception message used if an invalid root element type is passed to IDomainModelSerializer.SaveModel / SaveModelAndDiagram</comment>
+  </data>
+  <data name="InvalidSaveDiagramType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid diagram type.</value>
+    <comment>Exception message used if an invalid diagram type is passed to IDomainModelSerializer.SaveModelAndDiagram</comment>
   </data>
   <data name="MinimumMultiplicityMissingLink" xml:space="preserve">
     <value>{0} {1} has no {2}.</value>

@@ -31,6 +31,7 @@ namespace ORMSolutions.ORMArchitect.Framework
 	/// </summary>
 	[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Framework.DelayValidateSignal.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Framework.FrameworkDomainModel), "ORMSolutions.ORMArchitect.Framework.GeneratedCode.FrameworkDomainModelResx")]
 	[DslDesign::DescriptionResource("ORMSolutions.ORMArchitect.Framework.DelayValidateSignal.Description", typeof(global::ORMSolutions.ORMArchitect.Framework.FrameworkDomainModel), "ORMSolutions.ORMArchitect.Framework.GeneratedCode.FrameworkDomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::ORMSolutions.ORMArchitect.Framework.FrameworkDomainModel))]
 	[global::System.CLSCompliant(true)]
 	[DslModeling::DomainObjectId("c6d39cf7-e8aa-4be7-aa79-7659fbd32e54")]
 	public sealed partial class DelayValidateSignal : DslModeling::ModelElement
@@ -47,7 +48,7 @@ namespace ORMSolutions.ORMArchitect.Framework
 		/// <param name="store">Store where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
 		public DelayValidateSignal(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
-			: this(store != null ? store.DefaultPartition : null, propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
 		{
 		}
 		

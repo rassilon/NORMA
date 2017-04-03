@@ -6590,7 +6590,8 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 										{
 											SubtypeLink subtypeLink;
 											RolePlayerLink rolePlayerLink;
-											if (null != (subtypeLink = linkShape as SubtypeLink))
+											//if (null != (subtypeLink = linkShape as SubtypeLink))
+											if (linkShape.GetType() == typeof(SubtypeLink) && (null != (subtypeLink = (SubtypeLink)linkShape)))
 											{
 												if (subtypeLink.ToShape == factTypeShape)
 												{
@@ -6601,7 +6602,8 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 													subtypeLink.FromShape = newObjectShape;
 												}
 											}
-											else if (null != (rolePlayerLink = linkShape as RolePlayerLink) &&
+											else
+											if (null != (rolePlayerLink = linkShape as RolePlayerLink) &&
 												factTypeShape == MultiShapeUtility.ResolvePrimaryShape(rolePlayerLink.ToShape))
 											{
 												rolePlayerLink.ToShape = newObjectShape;
