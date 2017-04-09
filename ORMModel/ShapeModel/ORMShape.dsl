@@ -386,7 +386,7 @@
     </Connector>
   </Connectors>
 
-  <XmlSerializationBehavior Name="ORMShapeDomainModelSerializationBehavior" Namespace="ORMSolutions.ORMArchitect.Core.ShapeModel"/>
+  <XmlSerializationBehavior Name="ORMShapeDomainModelSerializationBehavior" Namespace="ORMSolutions.ORMArchitect.Core.ObjectModel"/>
   <DslLibraryImports>
     <DslLibraryImport FilePath="..\Framework\SystemCore.dsl"/>
     <DslLibraryImport FilePath="..\ObjectModel\ORMCore.dsl"/>
@@ -571,7 +571,7 @@
       <DomainClassMoniker Name="/ORMSolutions.ORMArchitect.Core.ObjectModel/ORMModel"/>
     </RootClass>
     <XmlSerializationDefinition>
-      <XmlSerializationBehaviorMoniker Name="/ORMSolutions.ORMArchitect.Core.ObjectModel/ORMCoreDomainModelSerializationBehavior"/>
+      <XmlSerializationBehaviorMoniker Name="/ORMSolutions.ORMArchitect.Core.ObjectModel/ORMShapeDomainModelSerializationBehavior"/>
     </XmlSerializationDefinition>
     <ToolboxTab TabText="ORM Designer">
       <ElementTool Name="EntityType" ToolboxIcon="../Resources/Toolbox.EntityType.Bitmap.Id.bmp" Caption="Entity Type" Tooltip="New Entity Type">

@@ -194,7 +194,7 @@
         <DomainClassMoniker Name="ORMNamedElement"/>
       </BaseClass>
       <Properties>
-        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Category="Group" Description="An informal description of this group.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="D1539042-2A67-413B-8B3B-12D00775BB8D" Kind="CustomStorage">
+        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Category="Group" Description="An informal description of this group.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="D1539042-2A67-413B-8B3B-12D00775BB8D" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -212,7 +212,7 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Category="Group" Description="A note to associate with this group.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="39B0228B-8884-4E4E-B595-4F058F192B50" Kind="CustomStorage">
+        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Category="Group" Description="A note to associate with this group.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="39B0228B-8884-4E4E-B595-4F058F192B50" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -230,7 +230,7 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="TypeCompliance" DefaultValue="NotExcluded" DisplayName="GroupTypeCompliance" Category="Group" Id="16E7B546-46CE-4A46-AED5-1437EDB5FA6C" Description="Specify the level of GroupType compliance for elements in this group.,    Not Excluded: Allow elements not explicitly excluded by a selected GroupType.,    Approved by Some Type: Allow elements explicitly approved by at least one GroupType.,    Approved by All Types: Allow elements explicitly approved by all selected GroupTypes.">
+        <DomainProperty Name="TypeCompliance" DefaultValue="NotExcluded" DisplayName="GroupTypeCompliance" Category="Group" Id="16E7B546-46CE-4A46-AED5-1437EDB5FA6C" Description="Specify the level of GroupType compliance for elements in this group.\\n    Not Excluded: Allow elements not explicitly excluded by a selected GroupType.\\n    Approved by Some Type: Allow elements explicitly approved by at least one GroupType.\\n    Approved by All Types: Allow elements explicitly approved by all selected GroupTypes.">
           <Type>
             <DomainEnumerationMoniker Name="GroupingMembershipTypeCompliance"/>
           </Type>
@@ -309,7 +309,7 @@
         <DomainClassMoniker Name="ORMNamedElement"/>
       </BaseClass>
       <Properties>
-        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Description="An informal description of this Model.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="E86A38C9-2F8E-4066-8114-384184C5E3C3" Kind="CustomStorage">
+        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Description="An informal description of this Model.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="E86A38C9-2F8E-4066-8114-384184C5E3C3" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -327,7 +327,7 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this Model.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="603A1F7B-06A4-4B85-9B0D-E3A85629FF98" Kind="CustomStorage">
+        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this Model.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="603A1F7B-06A4-4B85-9B0D-E3A85629FF98" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -408,7 +408,7 @@
             <ExternalTypeMoniker Name="/System/Boolean"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Description="An informal description of this ObjectType.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="431A8A8F-E8EC-4014-B1A1-843E55751A55" Kind="CustomStorage">
+        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Description="An informal description of this ObjectType.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="431A8A8F-E8EC-4014-B1A1-843E55751A55" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -426,7 +426,7 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this ObjectType.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="17C4E23D-CA49-4329-982F-48F4EFCA23BD" Kind="CustomStorage">
+        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this ObjectType.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="17C4E23D-CA49-4329-982F-48F4EFCA23BD" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -471,7 +471,7 @@
             <ExternalTypeMoniker Name="/System/Int32"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="ReferenceModeDisplay" DefaultValue="" DisplayName="RefMode" Id="2E56D25A-BD96-4478-A55C-9F17A15C94B6" Kind="CustomStorage" Description="The reference mode pattern for the EntityType.,    If the desired reference mode pattern is not specified in the dropdown, then a new pattern can be entered. The type of a new reference mode pattern is set by prepending a '.' for a popular reference mode, appending a ':' for a unit-based reference mode, and applying no decorators for a general reference mode. Reference mode settings can also be managed with the 'ORM Reference Mode Editor' tool window.">
+        <DomainProperty Name="ReferenceModeDisplay" DefaultValue="" DisplayName="RefMode" Id="2E56D25A-BD96-4478-A55C-9F17A15C94B6" Kind="CustomStorage" Description="The reference mode pattern for the EntityType.\\n    If the desired reference mode pattern is not specified in the dropdown, then a new pattern can be entered. The type of a new reference mode pattern is set by prepending a '.' for a popular reference mode, appending a ':' for a unit-based reference mode, and applying no decorators for a general reference mode. Reference mode settings can also be managed with the 'ORM Reference Mode Editor' tool window.">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -499,12 +499,12 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="ValueRangeText" DefaultValue="" DisplayName="ValueRange" Id="F0662C59-700B-435C-B57B-93E5FD84B71F" Kind="CustomStorage" Description="Restrict the range of possible values for instances of this ObjectType.,    To specify a range, use '..' between the range endpoints, square brackets to specify a closed endpoint, and parentheses to specify an open endpoint. Commas are used to entered multiple ranges or discrete values.,    Example: {[10..20), 30} specifies all values between 10 and 20 (but not including 20) and the value 30.">
+        <DomainProperty Name="ValueRangeText" DefaultValue="" DisplayName="ValueRange" Id="F0662C59-700B-435C-B57B-93E5FD84B71F" Kind="CustomStorage" Description="Restrict the range of possible values for instances of this ObjectType.\\n    To specify a range, use '..' between the range endpoints, square brackets to specify a closed endpoint, and parentheses to specify an open endpoint. Commas are used to entered multiple ranges or discrete values.\\n    Example: {[10..20), 30} specifies all values between 10 and 20 (but not including 20) and the value 30.">
           <Type>
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="ValueTypeValueRangeText" DefaultValue="" DisplayName="ValueTypeValueRange" Id="6EBE45BB-1054-4785-8C9D-905A41599EF9" Kind="CustomStorage" Description="The ValueRange property for the ValueType that identifies this EntityType.,    The ValueRange property of an EntityType is applied to the identifying role, not directly to the identifying ValueType. This allows EntityType ValueRanges to be specified independently for multiple EntityTypes identified with the same unit-based or general reference mode patterns.">
+        <DomainProperty Name="ValueTypeValueRangeText" DefaultValue="" DisplayName="ValueTypeValueRange" Id="6EBE45BB-1054-4785-8C9D-905A41599EF9" Kind="CustomStorage" Description="The ValueRange property for the ValueType that identifies this EntityType.\\n    The ValueRange property of an EntityType is applied to the identifying role, not directly to the identifying ValueType. This allows EntityType ValueRanges to be specified independently for multiple EntityTypes identified with the same unit-based or general reference mode patterns.">
           <Type>
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
@@ -519,7 +519,7 @@
             <ExternalTypeMoniker Name="/System/Boolean"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="TreatAsPersonal" DefaultValue="false" DisplayName="IsPersonal" Kind="CustomStorage" Id="114D5AF4-EE4A-4BAA-9F07-161C3B708E1F" Description="Does this ObjectType represent a person instead of a thing?,    Used as a verbalization directive to render references to this type using a personal pronoun ('who' instead of 'that').">
+        <DomainProperty Name="TreatAsPersonal" DefaultValue="false" DisplayName="IsPersonal" Kind="CustomStorage" Id="114D5AF4-EE4A-4BAA-9F07-161C3B708E1F" Description="Does this ObjectType represent a person instead of a thing?\\n    Used as a verbalization directive to render references to this type using a personal pronoun ('who' instead of 'that').">
           <Type>
             <ExternalTypeMoniker Name="/System/Boolean"/>
           </Type>
@@ -572,7 +572,7 @@
             <ExternalTypeMoniker Name="/System/Boolean"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Description="An informal description of this FactType.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="3F58E4D1-4562-478A-A3FE-08715E455CD8" Kind="CustomStorage">
+        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Description="An informal description of this FactType.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="3F58E4D1-4562-478A-A3FE-08715E455CD8" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -590,7 +590,7 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this FactType.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="AF6200B1-068D-434A-98D3-44E872B921BD" Kind="CustomStorage">
+        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this FactType.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="AF6200B1-068D-434A-98D3-44E872B921BD" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -608,7 +608,7 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="Name" DefaultValue="" DisplayName="Name" IsElementName="true" Id="B17F5E42-A0FA-4B88-9D24-D148CEEE7DB0" Kind="CustomStorage" Description="The name for this FactType.,    If the Name property is read-only, then it is a generated name based on primary reading.,    If the Name property is editable, then it is the name of an explicit or implicit objectifying EntityType. The editable name can be reset to match the generated name by clearing the property value.">
+        <DomainProperty Name="Name" DefaultValue="" DisplayName="Name" IsElementName="true" Id="B17F5E42-A0FA-4B88-9D24-D148CEEE7DB0" Kind="CustomStorage" Description="The name for this FactType.\\n    If the Name property is read-only, then it is a generated name based on primary reading.\\n    If the Name property is editable, then it is the name of an explicit or implicit objectifying EntityType. The editable name can be reset to match the generated name by clearing the property value.">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.MergableProperty">
               <Parameters>
@@ -736,7 +736,7 @@
             <DomainEnumerationMoniker Name="RoleMultiplicity"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="ValueRangeText" DefaultValue="" DisplayName="ValueRange" Id="3882C0AC-6F4A-4CF1-B856-E57A2DD4650C" Kind="CustomStorage" Description="Restrict the range of possible values for instances of the RolePlayer ObjectType.,    To specify a range, use '..' between the range endpoints, square brackets to specify a closed endpoint, and parentheses to specify an open endpoint. Commas are used to entered multiple ranges or discrete values.,    Example: {[10..20), 30} specifies all values between 10 and 20 (but not including 20) and the value 30.">
+        <DomainProperty Name="ValueRangeText" DefaultValue="" DisplayName="ValueRange" Id="3882C0AC-6F4A-4CF1-B856-E57A2DD4650C" Kind="CustomStorage" Description="Restrict the range of possible values for instances of the RolePlayer ObjectType.\\n    To specify a range, use '..' between the range endpoints, square brackets to specify a closed endpoint, and parentheses to specify an open endpoint. Commas are used to entered multiple ranges or discrete values.\\n    Example: {[10..20), 30} specifies all values between 10 and 20 (but not including 20) and the value 30.">
           <Type>
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
@@ -746,7 +746,7 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="MandatoryConstraintModality" DefaultValue="" DisplayName="MandatoryConstraintModality" Id="29B14765-434B-4CCF-9C93-BEE8BB7E2697" Kind="CustomStorage" Description="The Modality of the simple mandatory constraint on this Role.,    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;,    Deontic modality means that data violating the constraint can be recorded.">
+        <DomainProperty Name="MandatoryConstraintModality" DefaultValue="" DisplayName="MandatoryConstraintModality" Id="29B14765-434B-4CCF-9C93-BEE8BB7E2697" Kind="CustomStorage" Description="The Modality of the simple mandatory constraint on this Role.\\n    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;\\n    Deontic modality means that data violating the constraint can be recorded.">
           <Type>
             <DomainEnumerationMoniker Name="ConstraintModality"/>
           </Type>
@@ -763,7 +763,7 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="ObjectificationOppositeRoleName" DefaultValue="" DisplayName="ImpliedRoleName" Id="4719AAC4-E0E7-467A-B261-CDB8AE9826ED" Kind="CustomStorage" Description="The Name of the implied Role attached to the objectifying EntityType.,    An implied binary FactType is created relating the objectifying EntityType to each of the role players of an objectified FactType. Binary FactTypes with a spanning internal uniqueness constraint and ternary (or higher arity) FactTypes are automatically objectified.">
+        <DomainProperty Name="ObjectificationOppositeRoleName" DefaultValue="" DisplayName="ImpliedRoleName" Id="4719AAC4-E0E7-467A-B261-CDB8AE9826ED" Kind="CustomStorage" Description="The Name of the implied Role attached to the objectifying EntityType.\\n    An implied binary FactType is created relating the objectifying EntityType to each of the role players of an objectified FactType. Binary FactTypes with a spanning internal uniqueness constraint and ternary (or higher arity) FactTypes are automatically objectified.">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.MergableProperty">
               <Parameters>
@@ -839,12 +839,12 @@
         <DomainClassMoniker Name="ORMNamedElement"/>
       </BaseClass>
       <Properties>
-        <DomainProperty Name="Modality" DefaultValue="Alethic" DisplayName="Modality" Id="C0AEF802-D9E9-4938-B44B-DE9A6A530D9B" Description="The constraint Modality.,    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;,    Deontic modality means that data violating the constraint can be recorded.">
+        <DomainProperty Name="Modality" DefaultValue="Alethic" DisplayName="Modality" Id="C0AEF802-D9E9-4938-B44B-DE9A6A530D9B" Description="The constraint Modality.\\n    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;\\n    Deontic modality means that data violating the constraint can be recorded.">
           <Type>
             <DomainEnumerationMoniker Name="ConstraintModality"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Description="An informal description of this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="57B17D7F-C707-4CEB-8B95-36A19648C059" Kind="CustomStorage">
+        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Description="An informal description of this constraint.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="57B17D7F-C707-4CEB-8B95-36A19648C059" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -862,7 +862,7 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="00A8BEC9-8FDB-4961-B345-3A7C8FD18CFA" Kind="CustomStorage">
+        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this constraint.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="00A8BEC9-8FDB-4961-B345-3A7C8FD18CFA" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -970,7 +970,7 @@
         <DomainClassMoniker Name="SetConstraint"/>
       </BaseClass>
       <Properties>
-        <DomainProperty Name="IsPreferred" DefaultValue="false" DisplayName="IsPreferredIdentifier" Id="585DE7A0-8E09-43F3-8463-F20609A16790" Kind="CustomStorage" Description="Is this the preferred identifier for the EntityType role player of the opposite role(s)?,    The opposite role player of an internal constraint on an objectified FactType is the objectifying EntityType. Binary FactTypes with a spanning internal uniqueness constraint and ternary (or higher arity) FactTypes are automatically objectified.">
+        <DomainProperty Name="IsPreferred" DefaultValue="false" DisplayName="IsPreferredIdentifier" Id="585DE7A0-8E09-43F3-8463-F20609A16790" Kind="CustomStorage" Description="Is this the preferred identifier for the EntityType role player of the opposite role(s)?\\n    The opposite role player of an internal constraint on an objectified FactType is the objectifying EntityType. Binary FactTypes with a spanning internal uniqueness constraint and ternary (or higher arity) FactTypes are automatically objectified.">
           <Type>
             <ExternalTypeMoniker Name="/System/Boolean"/>
           </Type>
@@ -1033,12 +1033,12 @@
         <DomainClassMoniker Name="ConstraintRoleSequence"/>
       </BaseClass>
       <Properties>
-        <DomainProperty Name="Modality" DefaultValue="Alethic" DisplayName="Modality" Id="B4F1902A-7EB9-464F-A0F8-F816658C1BD8" Description="The constraint Modality.,    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;,    Deontic modality means that data violating the constraint can be recorded.">
+        <DomainProperty Name="Modality" DefaultValue="Alethic" DisplayName="Modality" Id="B4F1902A-7EB9-464F-A0F8-F816658C1BD8" Description="The constraint Modality.\\n    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;\\n    Deontic modality means that data violating the constraint can be recorded.">
           <Type>
             <DomainEnumerationMoniker Name="ConstraintModality"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Description="An informal description of this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="27353884-FF01-4DA8-9C95-A4186E1B569F" Kind="CustomStorage">
+        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Description="An informal description of this constraint.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="27353884-FF01-4DA8-9C95-A4186E1B569F" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -1056,7 +1056,7 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="63E2F8FC-6003-47F0-AF9A-AC539907CF11" Kind="CustomStorage">
+        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this constraint.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="63E2F8FC-6003-47F0-AF9A-AC539907CF11" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -1110,7 +1110,7 @@
         <DomainClassMoniker Name="RolePath"/>
       </BaseClass>
       <Properties>
-        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this path.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="D6949829-F14B-467F-AB02-04761957811C" Kind="CustomStorage">
+        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this path.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="D6949829-F14B-467F-AB02-04761957811C" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -1989,12 +1989,12 @@
         <DomainClassMoniker Name="ORMNamedElement"/>
       </BaseClass>
       <Properties>
-        <DomainProperty Name="Modality" DefaultValue="Alethic" DisplayName="Modality" Id="24519D57-5891-4D87-9287-FB28FD1D57AF" Description="The constraint Modality.,    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;,    Deontic modality means that data violating the constraint can be recorded.">
+        <DomainProperty Name="Modality" DefaultValue="Alethic" DisplayName="Modality" Id="24519D57-5891-4D87-9287-FB28FD1D57AF" Description="The constraint Modality.\\n    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;\\n    Deontic modality means that data violating the constraint can be recorded.">
           <Type>
             <DomainEnumerationMoniker Name="ConstraintModality"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Description="An informal description of this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="AFEE7AE8-88D7-4BD4-AFE8-EAD88F72F7C5" Kind="CustomStorage">
+        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Description="An informal description of this constraint.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="AFEE7AE8-88D7-4BD4-AFE8-EAD88F72F7C5" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -2012,7 +2012,7 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="2842701E-6D94-4270-A06B-11F722511E09" Kind="CustomStorage">
+        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this constraint.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="2842701E-6D94-4270-A06B-11F722511E09" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -2030,7 +2030,7 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="Text" DefaultValue="" DisplayName="Ranges" Id="6C4938A5-3226-4630-ACF5-6A07E2EAD6C9" Kind="CustomStorage" Description="Set the ranges for this cardinality constraint. The following patterns are recognized:,,Range with a zero lower bound: 0..n, ..n, &lt;n, &lt;=n,Range with no upper bound: &gt;n, &gt;=n, n..,Fixed range: n..m,,Cardinality supports multiple non-overlapping ranges and single values. A range of 0 indicates that an empty population is allowed. For example, 0,4.. will allow either an empty population or a population with four or more instances.">
+        <DomainProperty Name="Text" DefaultValue="" DisplayName="Ranges" Id="6C4938A5-3226-4630-ACF5-6A07E2EAD6C9" Kind="CustomStorage" Description="Set the ranges for this cardinality constraint. The following patterns are recognized:\\n\\nRange with a zero lower bound: 0..n, ..n, &lt;n, &lt;=n\\nRange with no upper bound: &gt;n, &gt;=n, n..\\nFixed range: n..m\\n\\nCardinality supports multiple non-overlapping ranges and single values. A range of 0 indicates that an empty population is allowed. For example, 0,4.. will allow either an empty population or a population with four or more instances.">
           <Type>
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
@@ -2147,7 +2147,7 @@
         <DomainClassMoniker Name="ORMNamedElement"/>
       </BaseClass>
       <Properties>
-        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Description="An informal description of this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="728C6254-DC03-4FF3-B3F2-9BA8B34F60C1" Kind="CustomStorage">
+        <DomainProperty Name="DefinitionText" DefaultValue="" DisplayName="InformalDescription" Description="An informal description of this constraint.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Informal Description Editor' tool window." Id="728C6254-DC03-4FF3-B3F2-9BA8B34F60C1" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -2165,7 +2165,7 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="49306D45-6A55-4D4F-9C83-FC95D33797D0" Kind="CustomStorage">
+        <DomainProperty Name="NoteText" DefaultValue="" DisplayName="Note" Description="A note to associate with this constraint.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." Id="49306D45-6A55-4D4F-9C83-FC95D33797D0" Kind="CustomStorage">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -2183,7 +2183,7 @@
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
         </DomainProperty>
-        <DomainProperty Name="Text" DefaultValue="" DisplayName="Text" Id="410FCE34-DACB-4F59-94A6-FF7E42108E74" Kind="CustomStorage" Description="The range of possible values.,    To specify a range, use '..' between the range endpoints, square brackets to specify a closed endpoint, and parentheses to specify an open endpoint. Commas are used to entered multiple ranges or discrete values.,    Example: {[10..20), 30} specifies all values between 10 and 20 (but not including 20) and the value 30.">
+        <DomainProperty Name="Text" DefaultValue="" DisplayName="Text" Id="410FCE34-DACB-4F59-94A6-FF7E42108E74" Kind="CustomStorage" Description="The range of possible values.\\n    To specify a range, use '..' between the range endpoints, square brackets to specify a closed endpoint, and parentheses to specify an open endpoint. Commas are used to entered multiple ranges or discrete values.\\n    Example: {[10..20), 30} specifies all values between 10 and 20 (but not including 20) and the value 30.">
           <Type>
             <ExternalTypeMoniker Name="/System/String"/>
           </Type>
@@ -2261,7 +2261,7 @@
         <DomainClassMoniker Name="ORMModelElement"/>
       </BaseClass>
       <Properties>
-        <DomainProperty Name="Text" DefaultValue="" Description="The description contents.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." DisplayName="Text" Id="B68867A8-4B52-4DE1-8B39-7EEE5ECB60A4">
+        <DomainProperty Name="Text" DefaultValue="" Description="The description contents.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." DisplayName="Text" Id="B68867A8-4B52-4DE1-8B39-7EEE5ECB60A4">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -2287,7 +2287,7 @@
         <DomainClassMoniker Name="ORMModelElement"/>
       </BaseClass>
       <Properties>
-        <DomainProperty Name="Text" DefaultValue="" Description="The note contents.,    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." DisplayName="Note" Id="0EF3BC12-45FF-46A8-B325-CDFCC105A1E1">
+        <DomainProperty Name="Text" DefaultValue="" Description="The note contents.\\n    To insert new lines, use Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool window." DisplayName="Note" Id="0EF3BC12-45FF-46A8-B325-CDFCC105A1E1">
           <Attributes>
             <ClrAttribute Name="global::System.ComponentModel.Editor">
               <Parameters>
@@ -4740,6 +4740,26 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
+
+    <!--<DomainRelationship Name="ModelNoteReferencesModelNote" Namespace="ORMSolutions.ORMArchitect.Core.ObjectModel" IsEmbedding="false" Id="A6F1EB10-F929-4389-B584-38DFE11ANOTE" DisplayName="ModelNoteOnFactType">
+      <BaseRelationship>
+        <DomainRelationshipMoniker Name="ModelNoteReferencesModelElement"/>
+      </BaseRelationship>
+      <Source>
+        <DomainRole Name="Note" PropertyName="FactTypeCollection" Multiplicity="ZeroMany" PropagatesDelete="false" IsPropertyGenerator="true" DisplayName="Note" Id="B2D991E2-3F04-4471-93F5-72D4E4DDF087">
+          <RolePlayer>
+            <DomainClassMoniker Name="ModelNote"/>
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Name="Element" PropertyName="ModelNoteCollection" Multiplicity="ZeroMany" PropagatesDelete="false" IsPropertyGenerator="true" DisplayName="Element" Id="C176868F-94E3-4F5E-A855-A33CA7D6NPTE">
+          <RolePlayer>
+            <DomainClassMoniker Name="ModelNote"/>
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>-->
 
     <DomainRelationship Name="ModelNoteReferencesFactType" Namespace="ORMSolutions.ORMArchitect.Core.ObjectModel" IsEmbedding="false" Id="A6F1EB10-F929-4389-B584-38DFE11A85C2" DisplayName="ModelNoteOnFactType">
       <BaseRelationship>
