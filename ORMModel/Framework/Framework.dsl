@@ -28,6 +28,6 @@
 	<Classes>
 		<DomainClass Name="DelayValidateSignal" Namespace="ORMSolutions.ORMArchitect.Framework" Id="C6D39CF7-E8AA-4BE7-AA79-7659FBD32E54" DisplayName="DelayValidateSignal" InheritanceModifier="Sealed" Description=""/>
 	</Classes>
-	<XmlSerializationBehavior Name="FrameworkDomainModelSerializationBehavior" Namespace=""/>
+	<XmlSerializationBehavior Name="FrameworkDomainModelSerializationBehavior" Namespace="ORMSolutions.ORMArchitect.Core.ObjectModel"/>
 
 </Dsl>

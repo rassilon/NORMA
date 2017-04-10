@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<microsoft.VisualStudio.Modeling.DslDesigner.DslDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DiagramDisplay">
+  <DslMoniker Name="/ORMSolutions.ORMArchitect.Framework.Shell/DiagramDisplay" />
+  <nestedChildShapes>
+    <microsoft.VisualStudio.Modeling.DslDesigner.DomainModelElements Id="f96084e6-0398-48cd-b013-fa9675d81124" absoluteBounds="0, 0, 2.464543530344963, 8.5">
+      <nestedChildShapes>
+        <microsoft.VisualStudio.Modeling.DslDesigner.ClassShape Id="622d463b-cf0f-4dfa-8f69-72f914732e35" absoluteBounds="0.5, 0.5, 1.6666666716337204, 0.94169108072916674">
+          <RootNodeMoniker Id="4ccf47e2-217d-401e-9fbb-a838303afd77" />
+          <relativeChildShapes>
+            <microsoft.VisualStudio.Modeling.DslDesigner.RelationshipPort Id="33977bde-7140-481f-af1e-7c47571c3506" absoluteBounds="0.74, 1.3916910807291667, 0.1, 0.1" />
+          </relativeChildShapes>
+          <nestedChildShapes>
+            <elementListCompartment Id="92eca666-1321-4a6b-bdbc-a77156fe94d5" absoluteBounds="0.515, 0.9, 1.6366666716337206, 0.44169108072916663" name="Properties" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </microsoft.VisualStudio.Modeling.DslDesigner.ClassShape>
+        <microsoft.VisualStudio.Modeling.DslDesigner.ClassShape Id="eb573981-62b0-4012-ba40-0f212567bd11" absoluteBounds="0.5, 1.6216910807291667, 1.714543530344963, 0.7493896484375">
+          <RootNodeMoniker Id="7d1f3ff3-bf22-4da3-91ef-48cb308fe918" />
+          <nestedChildShapes>
+            <elementListCompartment Id="dc202281-4e5e-4110-acee-45e354fc7aae" absoluteBounds="0.515, 2.0216910807291666, 1.6845435303449632, 0.2493896484375" name="Properties" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </microsoft.VisualStudio.Modeling.DslDesigner.ClassShape>
+      </nestedChildShapes>
+    </microsoft.VisualStudio.Modeling.DslDesigner.DomainModelElements>
+    <microsoft.VisualStudio.Modeling.DslDesigner.DiagramElements Id="07bf9d8a-fd2f-462d-b6bf-21292cf6d106" absoluteBounds="2.464543530344963, 0, 8.5354564696550366, 8.5" />
+  </nestedChildShapes>
+  <diagramState>
+    <DslDesignerDiagramState>
+      <DomainModelElementTree>
+        <DslDesignerDiagramTree>
+          <Roots>
+            <RootNode Id="4ccf47e2-217d-401e-9fbb-a838303afd77" IsRelationshipTreeExpanded="false">
+              <Class>
+                <DomainClassMoniker Name="/ORMSolutions.ORMArchitect.Framework.Shell/DiagramDisplay" />
+              </Class>
+            </RootNode>
+            <RootNode Id="7d1f3ff3-bf22-4da3-91ef-48cb308fe918">
+              <Class>
+                <DomainClassMoniker Name="/ORMSolutions.ORMArchitect.Framework.Shell/DiagramPlaceHolder" />
+              </Class>
+            </RootNode>
+          </Roots>
+        </DslDesignerDiagramTree>
+      </DomainModelElementTree>
+      <DiagramElementTree>
+        <DslDesignerDiagramTree />
+      </DiagramElementTree>
+    </DslDesignerDiagramState>
+  </diagramState>
+</microsoft.VisualStudio.Modeling.DslDesigner.DslDesignerDiagram>

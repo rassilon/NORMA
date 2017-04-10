@@ -146,8 +146,7 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 					// set to CustomStorage. Please provide the SetUpdateCounterValue()
 					// method on the domain class.
 					element.SetUpdateCounterValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}

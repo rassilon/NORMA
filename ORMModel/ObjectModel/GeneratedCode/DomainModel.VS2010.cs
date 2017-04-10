@@ -31,10 +31,12 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 	/// DomainModel ORMCoreDomainModel
 	/// Description for ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCore
 	/// </summary>
+	[DslModeling::ExtendsDomainModel("F60BC3F1-C38E-4C7D-9EE5-9211DB26CB45"/*ORMSolutions.ORMArchitect.Framework.FrameworkDomainModel*/)]
 	[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
 	[DslDesign::DescriptionResource("ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel.Description", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
 	[global::System.CLSCompliant(true)]
 	[DslModeling::DependsOnDomainModel(typeof(global::Microsoft.VisualStudio.Modeling.CoreDomainModel))]
+	//[DslModeling::DependsOnDomainModel(typeof(global::_SystemCoreDomainModel))]
 	[DslModeling::DependsOnDomainModel(typeof(global::ORMSolutions.ORMArchitect.Framework.FrameworkDomainModel))]
 	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Generated code.")]
 	[DslModeling::DomainObjectId("3eae649f-e654-4d04-8289-c25d2c0322d8")]

@@ -283,8 +283,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNameUsageValue()
 					// method on the domain class.
 					element.SetNameUsageValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -1151,8 +1150,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetExcludedCategoriesValue()
 					// method on the domain class.
 					element.SetExcludedCategoriesValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -1244,8 +1242,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetIncludedErrorsValue()
 					// method on the domain class.
 					element.SetIncludedErrorsValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -1337,8 +1334,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetExcludedErrorsValue()
 					// method on the domain class.
 					element.SetExcludedErrorsValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -1360,19 +1356,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasModelErrorDisplayFilter.ModelDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasModelErrorDisplayFilter.ModelDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasModelErrorDisplayFilter.ModelErrorDisplayFilterDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasModelErrorDisplayFilter.ModelErrorDisplayFilterDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -1673,19 +1657,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingSetRelatesToORMModel.ModelDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingSetRelatesToORMModel.ModelDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingSetRelatesToORMModel.GroupingSetDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingSetRelatesToORMModel.GroupingSetDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -1757,9 +1729,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of DefinitionText domain property.
-		/// An informal description of this group.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Informal Description Editor' tool window.
+		/// An informal description of this group.,    To insert new lines, use
+		/// Control-Enter in the dropdown editor, or open the 'ORM Informal Description
+		/// Editor' tool window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Definition>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -1837,8 +1809,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetDefinitionTextValue()
 					// method on the domain class.
 					element.SetDefinitionTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -1853,9 +1824,8 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of NoteText domain property.
-		/// A note to associate with this group.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Notes Editor' tool window.
+		/// A note to associate with this group.,    To insert new lines, use Control-Enter
+		/// in the dropdown editor, or open the 'ORM Notes Editor' tool window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Note>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -1933,8 +1903,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNoteTextValue()
 					// method on the domain class.
 					element.SetNoteTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -1954,13 +1923,11 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of TypeCompliance domain property.
-		/// Specify the level of GroupType compliance for elements in this group.
-		///     Not Excluded: Allow elements not explicitly excluded by a selected
-		/// GroupType.
-		///     Approved by Some Type: Allow elements explicitly approved by at least one
-		/// GroupType.
-		///     Approved by All Types: Allow elements explicitly approved by all selected
-		/// GroupTypes.
+		/// Specify the level of GroupType compliance for elements in this group.,    Not
+		/// Excluded: Allow elements not explicitly excluded by a selected GroupType.,   
+		/// Approved by Some Type: Allow elements explicitly approved by at least one
+		/// GroupType.,    Approved by All Types: Allow elements explicitly approved by all
+		/// selected GroupTypes.
 		/// </summary>
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGrouping/TypeCompliance.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
 		[DslDesign::CategoryResource("ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGrouping/TypeCompliance.Category", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -2141,19 +2108,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasDefinition.DefinitionDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasDefinition.DefinitionDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasDefinition.GroupingDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasDefinition.GroupingDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -2173,19 +2128,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasNote.NoteDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasNote.NoteDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasNote.GroupingDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasNote.GroupingDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -2828,9 +2771,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of DefinitionText domain property.
-		/// An informal description of this Model.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Informal Description Editor' tool window.
+		/// An informal description of this Model.,    To insert new lines, use
+		/// Control-Enter in the dropdown editor, or open the 'ORM Informal Description
+		/// Editor' tool window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Definition>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -2907,8 +2850,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetDefinitionTextValue()
 					// method on the domain class.
 					element.SetDefinitionTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -2923,9 +2865,8 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of NoteText domain property.
-		/// A note to associate with this Model.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Notes Editor' tool window.
+		/// A note to associate with this Model.,    To insert new lines, use Control-Enter
+		/// in the dropdown editor, or open the 'ORM Notes Editor' tool window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Note>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -3002,8 +2943,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNoteTextValue()
 					// method on the domain class.
 					element.SetNoteTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -3153,19 +3093,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasDefinition.DefinitionDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasDefinition.DefinitionDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasDefinition.ModelDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasDefinition.ModelDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -3185,19 +3113,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasPrimaryNote.NoteDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasPrimaryNote.NoteDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasPrimaryNote.ModelDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasPrimaryNote.ModelDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -3233,19 +3149,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasModelErrorDisplayFilter.ModelErrorDisplayFilterDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasModelErrorDisplayFilter.ModelErrorDisplayFilterDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasModelErrorDisplayFilter.ModelDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasModelErrorDisplayFilter.ModelDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -3290,17 +3194,17 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					return this.CanMergeSetConstraint(rootElement, elementGroupPrototype);
 				}
 				
+				if (rootElementDomainInfo.IsDerivedFrom(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType.DomainClassId)) 
+				{
+					return true;
+				}
+				
 				if (rootElementDomainInfo.IsDerivedFrom(global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint.DomainClassId)) 
 				{
 					return true;
 				}
 				
 				if (rootElementDomainInfo.IsDerivedFrom(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelNote.DomainClassId)) 
-				{
-					return true;
-				}
-				
-				if (rootElementDomainInfo.IsDerivedFrom(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType.DomainClassId)) 
 				{
 					return true;
 				}
@@ -3343,30 +3247,30 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 				return;
 			}
 				
-			global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint sourceSetComparisonConstraint2 = sourceElement as global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint;
-			if (sourceSetComparisonConstraint2 != null)
-			{
-				// Create link for path ModelHasSetComparisonConstraint.SetComparisonConstraintCollection
-				this.SetComparisonConstraintCollection.Add(sourceSetComparisonConstraint2);
-
-				return;
-			}
-				
-			global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelNote sourceModelNote3 = sourceElement as global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelNote;
-			if (sourceModelNote3 != null)
-			{
-				// Create link for path ModelHasModelNote.NoteCollection
-				this.NoteCollection.Add(sourceModelNote3);
-
-				return;
-			}
-				
-			global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType sourceObjectType4 = sourceElement as global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType;
-			if (sourceObjectType4 != null)
+			global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType sourceObjectType2 = sourceElement as global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType;
+			if (sourceObjectType2 != null)
 			{
 				
 				// Call custom method implemented in partial class
-				this.MergeRelateObjectType(sourceObjectType4, elementGroup);
+				this.MergeRelateObjectType(sourceObjectType2, elementGroup);
+				return;
+			}
+				
+			global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint sourceSetComparisonConstraint3 = sourceElement as global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint;
+			if (sourceSetComparisonConstraint3 != null)
+			{
+				// Create link for path ModelHasSetComparisonConstraint.SetComparisonConstraintCollection
+				this.SetComparisonConstraintCollection.Add(sourceSetComparisonConstraint3);
+
+				return;
+			}
+				
+			global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelNote sourceModelNote4 = sourceElement as global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelNote;
+			if (sourceModelNote4 != null)
+			{
+				// Create link for path ModelHasModelNote.NoteCollection
+				this.NoteCollection.Add(sourceModelNote4);
+
 				return;
 			}
 				
@@ -3415,12 +3319,21 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 				return;
 			}
 				
-			global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint sourceSetComparisonConstraint2 = sourceElement as global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint;
-			if (sourceSetComparisonConstraint2 != null)
+			global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType sourceObjectType2 = sourceElement as global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType;
+			if (sourceObjectType2 != null)
+			{
+				
+				// Call custom method implemented in partial class
+				this.MergeDisconnectObjectType(sourceObjectType2);
+				return;
+			}
+				
+			global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint sourceSetComparisonConstraint3 = sourceElement as global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint;
+			if (sourceSetComparisonConstraint3 != null)
 			{
 				// Delete link for path ModelHasSetComparisonConstraint.SetComparisonConstraintCollection
 				
-				foreach (DslModeling::ElementLink link in global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasSetComparisonConstraint.GetLinks((global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMModel)this, sourceSetComparisonConstraint2))
+				foreach (DslModeling::ElementLink link in global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasSetComparisonConstraint.GetLinks((global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMModel)this, sourceSetComparisonConstraint3))
 				{
 					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
 					link.Delete(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasSetComparisonConstraint.ModelDomainRoleId, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasSetComparisonConstraint.SetComparisonConstraintDomainRoleId);
@@ -3429,26 +3342,17 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 				return;
 			}
 				
-			global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelNote sourceModelNote3 = sourceElement as global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelNote;
-			if (sourceModelNote3 != null)
+			global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelNote sourceModelNote4 = sourceElement as global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelNote;
+			if (sourceModelNote4 != null)
 			{
 				// Delete link for path ModelHasModelNote.NoteCollection
 				
-				foreach (DslModeling::ElementLink link in global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasModelNote.GetLinks((global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMModel)this, sourceModelNote3))
+				foreach (DslModeling::ElementLink link in global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasModelNote.GetLinks((global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMModel)this, sourceModelNote4))
 				{
 					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
 					link.Delete(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasModelNote.ModelDomainRoleId, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasModelNote.NoteDomainRoleId);
 				}
 
-				return;
-			}
-				
-			global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType sourceObjectType4 = sourceElement as global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType;
-			if (sourceObjectType4 != null)
-			{
-				
-				// Call custom method implemented in partial class
-				this.MergeDisconnectObjectType(sourceObjectType4);
 				return;
 			}
 				
@@ -3622,8 +3526,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetIsExternalValue()
 					// method on the domain class.
 					element.SetIsExternalValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -3638,9 +3541,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of DefinitionText domain property.
-		/// An informal description of this ObjectType.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Informal Description Editor' tool window.
+		/// An informal description of this ObjectType.,    To insert new lines, use
+		/// Control-Enter in the dropdown editor, or open the 'ORM Informal Description
+		/// Editor' tool window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Definition>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -3717,8 +3620,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetDefinitionTextValue()
 					// method on the domain class.
 					element.SetDefinitionTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -3733,9 +3635,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of NoteText domain property.
-		/// A note to associate with this ObjectType.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Notes Editor' tool window.
+		/// A note to associate with this ObjectType.,    To insert new lines, use
+		/// Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool
+		/// window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Note>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -3812,8 +3714,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNoteTextValue()
 					// method on the domain class.
 					element.SetNoteTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -3902,8 +3803,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetIsIndependentValue()
 					// method on the domain class.
 					element.SetIsIndependentValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -3993,8 +3893,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetIsValueTypeValue()
 					// method on the domain class.
 					element.SetIsValueTypeValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -4084,8 +3983,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetDataTypeScaleValue()
 					// method on the domain class.
 					element.SetDataTypeScaleValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -4174,8 +4072,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetDataTypeLengthValue()
 					// method on the domain class.
 					element.SetDataTypeLengthValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -4190,13 +4087,12 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of ReferenceModeDisplay domain property.
-		/// The reference mode pattern for the EntityType.
-		///     If the desired reference mode pattern is not specified in the dropdown, then
-		/// a new pattern can be entered. The type of a new reference mode pattern is set by
-		/// prepending a '.' for a popular reference mode, appending a ':' for a unit-based
-		/// reference mode, and applying no decorators for a general reference mode.
-		/// Reference mode settings can also be managed with the 'ORM Reference Mode Editor'
-		/// tool window.
+		/// The reference mode pattern for the EntityType.,    If the desired reference mode
+		/// pattern is not specified in the dropdown, then a new pattern can be entered. The
+		/// type of a new reference mode pattern is set by prepending a '.' for a popular
+		/// reference mode, appending a ':' for a unit-based reference mode, and applying no
+		/// decorators for a general reference mode. Reference mode settings can also be
+		/// managed with the 'ORM Reference Mode Editor' tool window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.Design.ReferenceModePicker), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.TypeConverter(typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.Design.ReferenceModeConverter))]
@@ -4273,8 +4169,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetReferenceModeDisplayValue()
 					// method on the domain class.
 					element.SetReferenceModeDisplayValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -4366,8 +4261,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetReferenceModeStringValue()
 					// method on the domain class.
 					element.SetReferenceModeStringValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -4459,8 +4353,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetReferenceModeDecoratedStringValue()
 					// method on the domain class.
 					element.SetReferenceModeDecoratedStringValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -4475,12 +4368,12 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of ValueRangeText domain property.
-		/// Restrict the range of possible values for instances of this ObjectType.
-		///     To specify a range, use '..' between the range endpoints, square brackets to
+		/// Restrict the range of possible values for instances of this ObjectType.,    To
+		/// specify a range, use '..' between the range endpoints, square brackets to
 		/// specify a closed endpoint, and parentheses to specify an open endpoint. Commas
-		/// are used to entered multiple ranges or discrete values.
-		///     Example: {[10..20), 30} specifies all values between 10 and 20 (but not
-		/// including 20) and the value 30.
+		/// are used to entered multiple ranges or discrete values.,    Example: {[10..20),
+		/// 30} specifies all values between 10 and 20 (but not including 20) and the value
+		/// 30.
 		/// </summary>
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/ValueRangeText.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
 		[DslDesign::DescriptionResource("ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/ValueRangeText.Description", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -4555,8 +4448,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetValueRangeTextValue()
 					// method on the domain class.
 					element.SetValueRangeTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -4571,10 +4463,10 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of ValueTypeValueRangeText domain property.
-		/// The ValueRange property for the ValueType that identifies this EntityType.
-		///     The ValueRange property of an EntityType is applied to the identifying role,
-		/// not directly to the identifying ValueType. This allows EntityType ValueRanges to
-		/// be specified independently for multiple EntityTypes identified with the same
+		/// The ValueRange property for the ValueType that identifies this EntityType.,   
+		/// The ValueRange property of an EntityType is applied to the identifying role, not
+		/// directly to the identifying ValueType. This allows EntityType ValueRanges to be
+		/// specified independently for multiple EntityTypes identified with the same
 		/// unit-based or general reference mode patterns.
 		/// </summary>
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/ValueTypeValueRangeText.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -4650,8 +4542,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetValueTypeValueRangeTextValue()
 					// method on the domain class.
 					element.SetValueTypeValueRangeTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -4742,8 +4633,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetIsPersonalValue()
 					// method on the domain class.
 					element.SetIsPersonalValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -4833,8 +4723,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetIsSupertypePersonalValue()
 					// method on the domain class.
 					element.SetIsSupertypePersonalValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -4849,9 +4738,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of TreatAsPersonal domain property.
-		/// Does this ObjectType represent a person instead of a thing?
-		///     Used as a verbalization directive to render references to this type using a
-		/// personal pronoun ('who' instead of 'that').
+		/// Does this ObjectType represent a person instead of a thing?,    Used as a
+		/// verbalization directive to render references to this type using a personal
+		/// pronoun ('who' instead of 'that').
 		/// </summary>
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/TreatAsPersonal.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
 		[DslDesign::DescriptionResource("ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/TreatAsPersonal.Description", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -4925,8 +4814,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetTreatAsPersonalValue()
 					// method on the domain class.
 					element.SetTreatAsPersonalValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -5017,8 +4905,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetIsImplicitBooleanValueValue()
 					// method on the domain class.
 					element.SetIsImplicitBooleanValueValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -5111,8 +4998,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetDerivationNoteDisplayValue()
 					// method on the domain class.
 					element.SetDerivationNoteDisplayValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -5201,8 +5087,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetDerivationStorageDisplayValue()
 					// method on the domain class.
 					element.SetDerivationStorageDisplayValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -5243,19 +5128,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.Objectification.NestedFactTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.Objectification.NestedFactTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.Objectification.NestingTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.Objectification.NestingTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -5311,19 +5184,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeImpliesMandatoryConstraint.MandatoryConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeImpliesMandatoryConstraint.MandatoryConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeImpliesMandatoryConstraint.ObjectTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeImpliesMandatoryConstraint.ObjectTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -5379,19 +5240,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeHasPreferredIdentifier.PreferredIdentifierDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeHasPreferredIdentifier.PreferredIdentifierDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeHasPreferredIdentifier.PreferredIdentifierForDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeHasPreferredIdentifier.PreferredIdentifierForDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -5411,19 +5260,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeHasValueConstraint.ValueConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeHasValueConstraint.ValueConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeHasValueConstraint.ValueTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeHasValueConstraint.ValueTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -5443,19 +5280,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCardinalityConstraint.CardinalityConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCardinalityConstraint.CardinalityConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCardinalityConstraint.ObjectTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCardinalityConstraint.ObjectTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -5475,19 +5300,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasEntityTypeRequiresReferenceSchemeError.ReferenceSchemeErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasEntityTypeRequiresReferenceSchemeError.ReferenceSchemeErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasEntityTypeRequiresReferenceSchemeError.ObjectTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasEntityTypeRequiresReferenceSchemeError.ObjectTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -5507,19 +5320,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasDefinition.DefinitionDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasDefinition.DefinitionDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasDefinition.ObjectTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasDefinition.ObjectTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -5539,19 +5340,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasNote.NoteDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasNote.NoteDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasNote.ObjectTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasNote.ObjectTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -5587,19 +5376,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCompatibleSupertypesError.CompatibleSupertypesErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCompatibleSupertypesError.CompatibleSupertypesErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCompatibleSupertypesError.ObjectTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCompatibleSupertypesError.ObjectTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -5619,19 +5396,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasPreferredIdentifierRequiresMandatoryError.PreferredIdentifierRequiresMandatoryErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasPreferredIdentifierRequiresMandatoryError.PreferredIdentifierRequiresMandatoryErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasPreferredIdentifierRequiresMandatoryError.ObjectTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasPreferredIdentifierRequiresMandatoryError.ObjectTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -5651,19 +5416,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationExpression.DerivationRuleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationExpression.DerivationRuleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationExpression.SubtypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationExpression.SubtypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -5779,19 +5532,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationRule.DerivationRuleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationRule.DerivationRuleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationRule.SubtypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationRule.SubtypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -5933,9 +5674,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of DefinitionText domain property.
-		/// An informal description of this FactType.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Informal Description Editor' tool window.
+		/// An informal description of this FactType.,    To insert new lines, use
+		/// Control-Enter in the dropdown editor, or open the 'ORM Informal Description
+		/// Editor' tool window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Definition>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -6012,8 +5753,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetDefinitionTextValue()
 					// method on the domain class.
 					element.SetDefinitionTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -6028,9 +5768,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of NoteText domain property.
-		/// A note to associate with this FactType.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Notes Editor' tool window.
+		/// A note to associate with this FactType.,    To insert new lines, use
+		/// Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool
+		/// window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Note>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -6107,8 +5847,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNoteTextValue()
 					// method on the domain class.
 					element.SetNoteTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -6123,12 +5862,11 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of Name domain property.
-		/// The name for this FactType.
-		///     If the Name property is read-only, then it is a generated name based on
-		/// primary reading.
-		///     If the Name property is editable, then it is the name of an explicit or
-		/// implicit objectifying EntityType. The editable name can be reset to match the
-		/// generated name by clearing the property value.
+		/// The name for this FactType.,    If the Name property is read-only, then it is a
+		/// generated name based on primary reading.,    If the Name property is editable,
+		/// then it is the name of an explicit or implicit objectifying EntityType. The
+		/// editable name can be reset to match the generated name by clearing the property
+		/// value.
 		/// </summary>
 		[global::System.ComponentModel.MergableProperty(false)]
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.FactType/Name.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -6205,8 +5943,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNameValue()
 					// method on the domain class.
 					element.SetNameValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -6299,8 +6036,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetGeneratedNameValue()
 					// method on the domain class.
 					element.SetGeneratedNameValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -6390,8 +6126,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNameChangedValue()
 					// method on the domain class.
 					element.SetNameChangedValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -6483,8 +6218,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetDerivationNoteDisplayValue()
 					// method on the domain class.
 					element.SetDerivationNoteDisplayValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -6573,8 +6307,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetDerivationStorageDisplayValue()
 					// method on the domain class.
 					element.SetDerivationStorageDisplayValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -6627,19 +6360,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.Objectification.NestingTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.Objectification.NestingTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.Objectification.NestedFactTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.Objectification.NestedFactTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -6695,19 +6416,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresReadingError.ReadingRequiredErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresReadingError.ReadingRequiredErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresReadingError.FactTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresReadingError.FactTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -6727,19 +6436,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresInternalUniquenessConstraintError.InternalUniquenessConstraintRequiredErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresInternalUniquenessConstraintError.InternalUniquenessConstraintRequiredErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresInternalUniquenessConstraintError.FactTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresInternalUniquenessConstraintError.FactTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -6779,19 +6476,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasImpliedInternalUniquenessConstraintError.ImpliedInternalUniquenessConstraintErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasImpliedInternalUniquenessConstraintError.ImpliedInternalUniquenessConstraintErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasImpliedInternalUniquenessConstraintError.FactTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasImpliedInternalUniquenessConstraintError.FactTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -6811,19 +6496,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDefinition.DefinitionDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDefinition.DefinitionDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDefinition.FactTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDefinition.FactTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -6843,19 +6516,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasNote.NoteDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasNote.NoteDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasNote.FactTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasNote.FactTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -6907,19 +6568,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationExpression.DerivationRuleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationExpression.DerivationRuleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationExpression.FactTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationExpression.FactTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -6955,19 +6604,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationRule.DerivationRuleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationRule.DerivationRuleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationRule.FactTypeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationRule.FactTypeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -7296,19 +6933,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProxyHasRole.TargetRoleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProxyHasRole.TargetRoleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProxyHasRole.ProxyDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProxyHasRole.ProxyDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -7436,8 +7061,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetIsMandatoryValue()
 					// method on the domain class.
 					element.SetIsMandatoryValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -7529,8 +7153,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetMultiplicityValue()
 					// method on the domain class.
 					element.SetMultiplicityValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -7546,11 +7169,10 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		/// <summary>
 		/// Gets or sets the value of ValueRangeText domain property.
 		/// Restrict the range of possible values for instances of the RolePlayer
-		/// ObjectType.
-		///     To specify a range, use '..' between the range endpoints, square brackets to
-		/// specify a closed endpoint, and parentheses to specify an open endpoint. Commas
-		/// are used to entered multiple ranges or discrete values.
-		///     Example: {[10..20), 30} specifies all values between 10 and 20 (but not
+		/// ObjectType.,    To specify a range, use '..' between the range endpoints, square
+		/// brackets to specify a closed endpoint, and parentheses to specify an open
+		/// endpoint. Commas are used to entered multiple ranges or discrete values.,   
+		/// Example: {[10..20), 30} specifies all values between 10 and 20 (but not
 		/// including 20) and the value 30.
 		/// </summary>
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.Role/ValueRangeText.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -7626,8 +7248,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetValueRangeTextValue()
 					// method on the domain class.
 					element.SetValueRangeTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -7717,8 +7338,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetMandatoryConstraintNameValue()
 					// method on the domain class.
 					element.SetMandatoryConstraintNameValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -7733,10 +7353,10 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of MandatoryConstraintModality domain property.
-		/// The Modality of the simple mandatory constraint on this Role.
-		///     Alethic modality means the constraint is structurally enforced and data
-		/// violating the constraint cannot be entered in the system;
-		///     Deontic modality means that data violating the constraint can be recorded.
+		/// The Modality of the simple mandatory constraint on this Role.,    Alethic
+		/// modality means the constraint is structurally enforced and data violating the
+		/// constraint cannot be entered in the system;,    Deontic modality means that data
+		/// violating the constraint can be recorded.
 		/// </summary>
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.Role/MandatoryConstraintModality.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
 		[DslDesign::DescriptionResource("ORMSolutions.ORMArchitect.Core.ObjectModel.Role/MandatoryConstraintModality.Description", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -7810,8 +7430,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetMandatoryConstraintModalityValue()
 					// method on the domain class.
 					element.SetMandatoryConstraintModalityValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -7915,11 +7534,11 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of ObjectificationOppositeRoleName domain property.
-		/// The Name of the implied Role attached to the objectifying EntityType.
-		///     An implied binary FactType is created relating the objectifying EntityType
-		/// to each of the role players of an objectified FactType. Binary FactTypes with a
-		/// spanning internal uniqueness constraint and ternary (or higher arity) FactTypes
-		/// are automatically objectified.
+		/// The Name of the implied Role attached to the objectifying EntityType.,    An
+		/// implied binary FactType is created relating the objectifying EntityType to each
+		/// of the role players of an objectified FactType. Binary FactTypes with a spanning
+		/// internal uniqueness constraint and ternary (or higher arity) FactTypes are
+		/// automatically objectified.
 		/// </summary>
 		[global::System.ComponentModel.MergableProperty(false)]
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.Role/ObjectificationOppositeRoleName.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -7995,8 +7614,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetObjectificationOppositeRoleNameValue()
 					// method on the domain class.
 					element.SetObjectificationOppositeRoleNameValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -8054,19 +7672,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UnaryRoleHasCardinalityConstraint.CardinalityConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UnaryRoleHasCardinalityConstraint.CardinalityConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UnaryRoleHasCardinalityConstraint.UnaryRoleDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UnaryRoleHasCardinalityConstraint.UnaryRoleDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -8086,19 +7692,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasValueConstraint.ValueConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasValueConstraint.ValueConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasValueConstraint.RoleDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasValueConstraint.RoleDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -8118,19 +7712,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasRolePlayerRequiredError.RolePlayerRequiredErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasRolePlayerRequiredError.RolePlayerRequiredErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasRolePlayerRequiredError.RoleDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasRolePlayerRequiredError.RoleDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -8150,19 +7732,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProxyHasRole.ProxyDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProxyHasRole.ProxyDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProxyHasRole.TargetRoleDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProxyHasRole.TargetRoleDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -8182,19 +7752,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedUnaryRoleHasRole.ObjectifiedUnaryRoleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedUnaryRoleHasRole.ObjectifiedUnaryRoleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedUnaryRoleHasRole.TargetRoleDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedUnaryRoleHasRole.TargetRoleDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -8300,19 +7858,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedUnaryRoleHasRole.TargetRoleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedUnaryRoleHasRole.TargetRoleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedUnaryRoleHasRole.ObjectifiedUnaryRoleDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedUnaryRoleHasRole.ObjectifiedUnaryRoleDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -8441,8 +7987,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNameConsumerValue()
 					// method on the domain class.
 					element.SetNameConsumerValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -8532,8 +8077,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNameUsageValue()
 					// method on the domain class.
 					element.SetNameUsageValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -8650,19 +8194,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ExclusiveOrConstraintCoupler.MandatoryConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ExclusiveOrConstraintCoupler.MandatoryConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ExclusiveOrConstraintCoupler.ExclusionConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ExclusiveOrConstraintCoupler.ExclusionConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -8742,19 +8274,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasNotWellModeledSubsetAndMandatoryError.NotWellModeledSubsetAndMandatoryErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasNotWellModeledSubsetAndMandatoryError.NotWellModeledSubsetAndMandatoryErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasNotWellModeledSubsetAndMandatoryError.SubsetConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasNotWellModeledSubsetAndMandatoryError.SubsetConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -8774,19 +8294,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasSupersetRoleOfSubtypeSubsetConstraintNotSubtypeError.SupersetRoleOfSubtypeSubsetConstraintNotSubtypeErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasSupersetRoleOfSubtypeSubsetConstraintNotSubtypeError.SupersetRoleOfSubtypeSubsetConstraintNotSubtypeErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasSupersetRoleOfSubtypeSubsetConstraintNotSubtypeError.SubsetConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasSupersetRoleOfSubtypeSubsetConstraintNotSubtypeError.SubsetConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -8835,10 +8343,10 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of Modality domain property.
-		/// The constraint Modality.
-		///     Alethic modality means the constraint is structurally enforced and data
-		/// violating the constraint cannot be entered in the system;
-		///     Deontic modality means that data violating the constraint can be recorded.
+		/// The constraint Modality.,    Alethic modality means the constraint is
+		/// structurally enforced and data violating the constraint cannot be entered in the
+		/// system;,    Deontic modality means that data violating the constraint can be
+		/// recorded.
 		/// </summary>
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint/Modality.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
 		[DslDesign::DescriptionResource("ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint/Modality.Description", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -8921,9 +8429,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of DefinitionText domain property.
-		/// An informal description of this constraint.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Informal Description Editor' tool window.
+		/// An informal description of this constraint.,    To insert new lines, use
+		/// Control-Enter in the dropdown editor, or open the 'ORM Informal Description
+		/// Editor' tool window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Definition>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -9000,8 +8508,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetDefinitionTextValue()
 					// method on the domain class.
 					element.SetDefinitionTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -9016,9 +8523,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of NoteText domain property.
-		/// A note to associate with this constraint.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Notes Editor' tool window.
+		/// A note to associate with this constraint.,    To insert new lines, use
+		/// Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool
+		/// window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Note>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -9095,8 +8602,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNoteTextValue()
 					// method on the domain class.
 					element.SetNoteTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -9170,19 +8676,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooFewRoleSequencesError.TooFewRoleSequencesErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooFewRoleSequencesError.TooFewRoleSequencesErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooFewRoleSequencesError.SetComparisonConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooFewRoleSequencesError.SetComparisonConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -9202,19 +8696,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooManyRoleSequencesError.TooManyRoleSequencesErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooManyRoleSequencesError.TooManyRoleSequencesErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooManyRoleSequencesError.SetComparisonConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooManyRoleSequencesError.SetComparisonConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -9310,19 +8792,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasExternalConstraintRoleSequenceArityMismatchError.ArityMismatchErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasExternalConstraintRoleSequenceArityMismatchError.ArityMismatchErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasExternalConstraintRoleSequenceArityMismatchError.ConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasExternalConstraintRoleSequenceArityMismatchError.ConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -9358,19 +8828,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasDefinition.DefinitionDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasDefinition.DefinitionDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasDefinition.SetComparisonConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasDefinition.SetComparisonConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -9390,19 +8848,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasNote.NoteDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasNote.NoteDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasNote.SetComparisonConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasNote.SetComparisonConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -9438,19 +8884,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasImplicationError.ImplicationErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasImplicationError.ImplicationErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasImplicationError.SetComparisonConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasImplicationError.SetComparisonConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -9470,19 +8904,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasEqualityOrSubsetImpliedByMandatoryError.EqualityOrSubsetImpliedByMandatoryErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasEqualityOrSubsetImpliedByMandatoryError.EqualityOrSubsetImpliedByMandatoryErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasEqualityOrSubsetImpliedByMandatoryError.SetComparisonConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasEqualityOrSubsetImpliedByMandatoryError.SetComparisonConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -9898,19 +9320,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RingConstraintHasRingConstraintTypeNotSpecifiedError.RingConstraintTypeNotSpecifiedErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RingConstraintHasRingConstraintTypeNotSpecifiedError.RingConstraintTypeNotSpecifiedErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RingConstraintHasRingConstraintTypeNotSpecifiedError.RingConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RingConstraintHasRingConstraintTypeNotSpecifiedError.RingConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -10151,19 +9561,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintMinMaxError.FrequencyConstraintMinMaxErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintMinMaxError.FrequencyConstraintMinMaxErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintMinMaxError.FrequencyConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintMinMaxError.FrequencyConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -10183,19 +9581,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintExactlyOneError.FrequencyConstraintExactlyOneErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintExactlyOneError.FrequencyConstraintExactlyOneErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintExactlyOneError.FrequencyConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintExactlyOneError.FrequencyConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -10215,19 +9601,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintNonRestrictiveRangeError.FrequencyConstraintNonRestrictiveRangeErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintNonRestrictiveRangeError.FrequencyConstraintNonRestrictiveRangeErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintNonRestrictiveRangeError.FrequencyConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintNonRestrictiveRangeError.FrequencyConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -10247,19 +9621,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintViolatedByUniquenessConstraintError.FrequencyConstraintViolatedByUniquenessConstraintErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintViolatedByUniquenessConstraintError.FrequencyConstraintViolatedByUniquenessConstraintErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintViolatedByUniquenessConstraintError.FrequencyConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintViolatedByUniquenessConstraintError.FrequencyConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -10314,11 +9676,10 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		/// <summary>
 		/// Gets or sets the value of IsPreferred domain property.
 		/// Is this the preferred identifier for the EntityType role player of the opposite
-		/// role(s)?
-		///     The opposite role player of an internal constraint on an objectified
-		/// FactType is the objectifying EntityType. Binary FactTypes with a spanning
-		/// internal uniqueness constraint and ternary (or higher arity) FactTypes are
-		/// automatically objectified.
+		/// role(s)?,    The opposite role player of an internal constraint on an
+		/// objectified FactType is the objectifying EntityType. Binary FactTypes with a
+		/// spanning internal uniqueness constraint and ternary (or higher arity) FactTypes
+		/// are automatically objectified.
 		/// </summary>
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.UniquenessConstraint/IsPreferred.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
 		[DslDesign::DescriptionResource("ORMSolutions.ORMArchitect.Core.ObjectModel.UniquenessConstraint/IsPreferred.Description", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -10392,8 +9753,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetIsPreferredValue()
 					// method on the domain class.
 					element.SetIsPreferredValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -10504,19 +9864,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeHasPreferredIdentifier.PreferredIdentifierForDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeHasPreferredIdentifier.PreferredIdentifierForDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeHasPreferredIdentifier.PreferredIdentifierDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeHasPreferredIdentifier.PreferredIdentifierDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -10536,19 +9884,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UniquenessConstraintHasNMinusOneError.NMinusOneErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UniquenessConstraintHasNMinusOneError.NMinusOneErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UniquenessConstraintHasNMinusOneError.ConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UniquenessConstraintHasNMinusOneError.ConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -10787,19 +10123,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeImpliesMandatoryConstraint.ObjectTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeImpliesMandatoryConstraint.ObjectTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeImpliesMandatoryConstraint.MandatoryConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeImpliesMandatoryConstraint.MandatoryConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -10819,19 +10143,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ExclusiveOrConstraintCoupler.ExclusionConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ExclusiveOrConstraintCoupler.ExclusionConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ExclusiveOrConstraintCoupler.MandatoryConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ExclusiveOrConstraintCoupler.MandatoryConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -10871,19 +10183,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.MandatoryConstraintHasNotWellModeledSubsetAndMandatoryError.NotWellModeledSubsetAndMandatoryErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.MandatoryConstraintHasNotWellModeledSubsetAndMandatoryError.NotWellModeledSubsetAndMandatoryErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.MandatoryConstraintHasNotWellModeledSubsetAndMandatoryError.MandatoryConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.MandatoryConstraintHasNotWellModeledSubsetAndMandatoryError.MandatoryConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -11047,19 +10347,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasOperatorNotSpecifiedError.OperatorNotSpecifiedErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasOperatorNotSpecifiedError.OperatorNotSpecifiedErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasOperatorNotSpecifiedError.ValueComparisonConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasOperatorNotSpecifiedError.ValueComparisonConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -11079,19 +10367,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasRolesNotComparableError.RolesNotComparableErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasRolesNotComparableError.RolesNotComparableErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasRolesNotComparableError.ValueComparisonConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasRolesNotComparableError.ValueComparisonConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -11140,10 +10416,10 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of Modality domain property.
-		/// The constraint Modality.
-		///     Alethic modality means the constraint is structurally enforced and data
-		/// violating the constraint cannot be entered in the system;
-		///     Deontic modality means that data violating the constraint can be recorded.
+		/// The constraint Modality.,    Alethic modality means the constraint is
+		/// structurally enforced and data violating the constraint cannot be entered in the
+		/// system;,    Deontic modality means that data violating the constraint can be
+		/// recorded.
 		/// </summary>
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraint/Modality.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
 		[DslDesign::DescriptionResource("ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraint/Modality.Description", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -11226,9 +10502,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of DefinitionText domain property.
-		/// An informal description of this constraint.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Informal Description Editor' tool window.
+		/// An informal description of this constraint.,    To insert new lines, use
+		/// Control-Enter in the dropdown editor, or open the 'ORM Informal Description
+		/// Editor' tool window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Definition>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -11305,8 +10581,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetDefinitionTextValue()
 					// method on the domain class.
 					element.SetDefinitionTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -11321,9 +10596,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of NoteText domain property.
-		/// A note to associate with this constraint.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Notes Editor' tool window.
+		/// A note to associate with this constraint.,    To insert new lines, use
+		/// Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool
+		/// window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Note>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -11400,8 +10675,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNoteTextValue()
 					// method on the domain class.
 					element.SetNoteTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -11479,19 +10753,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasCompatibleRolePlayerTypeError.CompatibleRolePlayerTypeErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasCompatibleRolePlayerTypeError.CompatibleRolePlayerTypeErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasCompatibleRolePlayerTypeError.SetConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasCompatibleRolePlayerTypeError.SetConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -11511,19 +10773,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooFewRoleSequencesError.TooFewRoleSequencesErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooFewRoleSequencesError.TooFewRoleSequencesErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooFewRoleSequencesError.SetConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooFewRoleSequencesError.SetConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -11543,19 +10793,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooManyRoleSequencesError.TooManyRoleSequencesErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooManyRoleSequencesError.TooManyRoleSequencesErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooManyRoleSequencesError.SetConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooManyRoleSequencesError.SetConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -11575,19 +10813,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasDefinition.DefinitionDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasDefinition.DefinitionDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasDefinition.SetConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasDefinition.SetConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -11607,19 +10833,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasNote.NoteDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasNote.NoteDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasNote.SetConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasNote.SetConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -11655,19 +10869,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasImplicationError.ImplicationErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasImplicationError.ImplicationErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasImplicationError.SetConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasImplicationError.SetConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -11733,19 +10935,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPathRequiredError.JoinPathRequiredErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPathRequiredError.JoinPathRequiredErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPathRequiredError.RoleSequenceDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPathRequiredError.RoleSequenceDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -11765,19 +10955,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPath.JoinPathDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPath.JoinPathDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPath.RoleSequenceDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPath.RoleSequenceDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -11896,19 +11074,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathOwnerHasSingleOwnedLeadRolePath.RolePathDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathOwnerHasSingleOwnedLeadRolePath.RolePathDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathOwnerHasSingleOwnedLeadRolePath.PathOwnerDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathOwnerHasSingleOwnedLeadRolePath.PathOwnerDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -12233,19 +11399,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathHasRootObjectTypeError.RootObjectTypeRequiredErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathHasRootObjectTypeError.RootObjectTypeRequiredErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathHasRootObjectTypeError.RolePathDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathHasRootObjectTypeError.RolePathDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -12300,9 +11454,8 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of NoteText domain property.
-		/// A note to associate with this path.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Notes Editor' tool window.
+		/// A note to associate with this path.,    To insert new lines, use Control-Enter
+		/// in the dropdown editor, or open the 'ORM Notes Editor' tool window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Note>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -12379,8 +11532,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNoteTextValue()
 					// method on the domain class.
 					element.SetNoteTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -12402,19 +11554,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.LeadRolePathHasNote.NoteDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.LeadRolePathHasNote.NoteDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.LeadRolePathHasNote.LeadRolePathDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.LeadRolePathHasNote.LeadRolePathDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -12682,19 +11822,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathObjectUnifierHasCompatibleObjectTypesError.CompatibilityErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathObjectUnifierHasCompatibleObjectTypesError.CompatibilityErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathObjectUnifierHasCompatibleObjectTypesError.ObjectUnifierDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathObjectUnifierHasCompatibleObjectTypesError.ObjectUnifierDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -12962,19 +12090,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasFunctionRequiredError.FunctionRequiredErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasFunctionRequiredError.FunctionRequiredErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasFunctionRequiredError.CalculatedPathValueDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasFunctionRequiredError.CalculatedPathValueDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -13010,19 +12126,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasConsumptionRequiredError.ConsumptionRequiredErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasConsumptionRequiredError.ConsumptionRequiredErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasConsumptionRequiredError.CalculatedPathValueDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasConsumptionRequiredError.CalculatedPathValueDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -13042,19 +12146,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasAggregationContextRequiredError.AggregationContextRequiredErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasAggregationContextRequiredError.AggregationContextRequiredErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasAggregationContextRequiredError.CalculatedPathValueDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasAggregationContextRequiredError.CalculatedPathValueDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -13201,19 +12293,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleProjectedFromPathConstant.ConstraintRoleProjectionDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleProjectedFromPathConstant.ConstraintRoleProjectionDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleProjectedFromPathConstant.SourceDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleProjectedFromPathConstant.SourceDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -13232,19 +12312,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueInputBindsToPathConstant.InputDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueInputBindsToPathConstant.InputDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueInputBindsToPathConstant.SourceDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueInputBindsToPathConstant.SourceDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -13263,19 +12331,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubqueryParameterInputFromPathConstant.ParameterInputDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubqueryParameterInputFromPathConstant.ParameterInputDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubqueryParameterInputFromPathConstant.SourceDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubqueryParameterInputFromPathConstant.SourceDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -13294,19 +12350,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.DerivedRoleProjectedFromPathConstant.RoleProjectionDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.DerivedRoleProjectedFromPathConstant.RoleProjectionDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.DerivedRoleProjectedFromPathConstant.SourceDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.DerivedRoleProjectedFromPathConstant.SourceDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -14088,19 +13132,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueInputBindsToPathConstant.SourceDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueInputBindsToPathConstant.SourceDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueInputBindsToPathConstant.InputDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueInputBindsToPathConstant.InputDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -14479,19 +13511,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationRule.FactTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationRule.FactTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationRule.DerivationRuleDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationRule.DerivationRuleDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -14527,19 +13547,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProjectedDerivationRuleHasProjectionRequiredError.ProjectionRequiredErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProjectedDerivationRuleHasProjectionRequiredError.ProjectionRequiredErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProjectedDerivationRuleHasProjectionRequiredError.DerivationRuleDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProjectedDerivationRuleHasProjectionRequiredError.DerivationRuleDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -15043,19 +14051,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeDerivationRuleHasDerivationNote.DerivationNoteDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeDerivationRuleHasDerivationNote.DerivationNoteDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeDerivationRuleHasDerivationNote.DerivationRuleDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeDerivationRuleHasDerivationNote.DerivationRuleDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -15424,19 +14420,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationRule.SubtypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationRule.SubtypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationRule.DerivationRuleDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationRule.DerivationRuleDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -15456,19 +14440,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeDerivationRuleHasDerivationNote.DerivationNoteDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeDerivationRuleHasDerivationNote.DerivationNoteDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeDerivationRuleHasDerivationNote.DerivationRuleDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeDerivationRuleHasDerivationNote.DerivationRuleDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -15617,19 +14589,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPath.RoleSequenceDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPath.RoleSequenceDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPath.JoinPathDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPath.JoinPathDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -15665,19 +14625,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceJoinPathHasProjectionRequiredError.ProjectionRequiredErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceJoinPathHasProjectionRequiredError.ProjectionRequiredErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceJoinPathHasProjectionRequiredError.JoinPathDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceJoinPathHasProjectionRequiredError.JoinPathDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -15738,19 +14686,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathHasRootObjectTypeError.RolePathDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathHasRootObjectTypeError.RolePathDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathHasRootObjectTypeError.RootObjectTypeRequiredErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathHasRootObjectTypeError.RootObjectTypeRequiredErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -15813,19 +14749,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasSameFactTypeFollowsJoinError.PathedRoleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasSameFactTypeFollowsJoinError.PathedRoleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasSameFactTypeFollowsJoinError.SameFactTypeRoleFollowsJoinErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasSameFactTypeFollowsJoinError.SameFactTypeRoleFollowsJoinErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -15887,19 +14811,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasCompatibleJoinRolePlayerError.PathedRoleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasCompatibleJoinRolePlayerError.PathedRoleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasCompatibleJoinRolePlayerError.JoinCompatibilityErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasCompatibleJoinRolePlayerError.JoinCompatibilityErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -15960,19 +14872,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathObjectUnifierHasCompatibleObjectTypesError.ObjectUnifierDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathObjectUnifierHasCompatibleObjectTypesError.ObjectUnifierDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathObjectUnifierHasCompatibleObjectTypesError.CompatibilityErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathObjectUnifierHasCompatibleObjectTypesError.CompatibilityErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -16034,19 +14934,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasMandatoryOuterJoinError.PathedRoleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasMandatoryOuterJoinError.PathedRoleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasMandatoryOuterJoinError.MandatoryOuterJoinErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasMandatoryOuterJoinError.MandatoryOuterJoinErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -16107,19 +14995,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasFunctionRequiredError.CalculatedPathValueDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasFunctionRequiredError.CalculatedPathValueDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasFunctionRequiredError.FunctionRequiredErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasFunctionRequiredError.FunctionRequiredErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -16180,19 +15056,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasAggregationContextRequiredError.CalculatedPathValueDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasAggregationContextRequiredError.CalculatedPathValueDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasAggregationContextRequiredError.AggregationContextRequiredErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasAggregationContextRequiredError.AggregationContextRequiredErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -16315,19 +15179,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasConsumptionRequiredError.CalculatedPathValueDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasConsumptionRequiredError.CalculatedPathValueDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasConsumptionRequiredError.ConsumptionRequiredErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CalculatedPathValueHasConsumptionRequiredError.ConsumptionRequiredErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -16389,19 +15241,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProjectedDerivationRuleHasProjectionRequiredError.DerivationRuleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProjectedDerivationRuleHasProjectionRequiredError.DerivationRuleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProjectedDerivationRuleHasProjectionRequiredError.ProjectionRequiredErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleProjectedDerivationRuleHasProjectionRequiredError.ProjectionRequiredErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -16462,19 +15302,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleSetDerivationProjectionHasPartialProjectionError.DerivationProjectionDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleSetDerivationProjectionHasPartialProjectionError.DerivationProjectionDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleSetDerivationProjectionHasPartialProjectionError.PartialProjectionErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleSetDerivationProjectionHasPartialProjectionError.PartialProjectionErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -16536,19 +15364,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.DerivedRoleProjectionHasDerivedRoleRequiresCompatibleProjectionError.ProjectionDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.DerivedRoleProjectionHasDerivedRoleRequiresCompatibleProjectionError.ProjectionDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.DerivedRoleProjectionHasDerivedRoleRequiresCompatibleProjectionError.IncompatibleProjectionErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.DerivedRoleProjectionHasDerivedRoleRequiresCompatibleProjectionError.IncompatibleProjectionErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -16610,19 +15426,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceJoinPathHasProjectionRequiredError.JoinPathDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceJoinPathHasProjectionRequiredError.JoinPathDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceJoinPathHasProjectionRequiredError.ProjectionRequiredErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceJoinPathHasProjectionRequiredError.ProjectionRequiredErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -16684,19 +15488,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceProjectionHasPartialProjectionError.JoinPathProjectionDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceProjectionHasPartialProjectionError.JoinPathProjectionDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceProjectionHasPartialProjectionError.PartialProjectionErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceProjectionHasPartialProjectionError.PartialProjectionErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -16758,19 +15550,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleProjectionHasConstraintRoleRequiresCompatibleJoinPathProjectionError.ProjectionDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleProjectionHasConstraintRoleRequiresCompatibleJoinPathProjectionError.ProjectionDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleProjectionHasConstraintRoleRequiresCompatibleJoinPathProjectionError.IncompatibleProjectionErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleProjectionHasConstraintRoleRequiresCompatibleJoinPathProjectionError.IncompatibleProjectionErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -16830,19 +15610,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooFewRoleSequencesError.SetComparisonConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooFewRoleSequencesError.SetComparisonConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooFewRoleSequencesError.TooFewRoleSequencesErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooFewRoleSequencesError.TooFewRoleSequencesErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -16862,19 +15630,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooFewRoleSequencesError.SetConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooFewRoleSequencesError.SetConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooFewRoleSequencesError.TooFewRoleSequencesErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooFewRoleSequencesError.TooFewRoleSequencesErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -16934,19 +15690,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooManyRoleSequencesError.SetComparisonConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooManyRoleSequencesError.SetComparisonConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooManyRoleSequencesError.TooManyRoleSequencesErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasTooManyRoleSequencesError.TooManyRoleSequencesErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -16966,19 +15710,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooManyRoleSequencesError.SetConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooManyRoleSequencesError.SetConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooManyRoleSequencesError.TooManyRoleSequencesErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasTooManyRoleSequencesError.TooManyRoleSequencesErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -17580,19 +16312,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasNotWellModeledSubsetAndMandatoryError.SubsetConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasNotWellModeledSubsetAndMandatoryError.SubsetConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasNotWellModeledSubsetAndMandatoryError.NotWellModeledSubsetAndMandatoryErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasNotWellModeledSubsetAndMandatoryError.NotWellModeledSubsetAndMandatoryErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -17612,19 +16332,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.MandatoryConstraintHasNotWellModeledSubsetAndMandatoryError.MandatoryConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.MandatoryConstraintHasNotWellModeledSubsetAndMandatoryError.MandatoryConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.MandatoryConstraintHasNotWellModeledSubsetAndMandatoryError.NotWellModeledSubsetAndMandatoryErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.MandatoryConstraintHasNotWellModeledSubsetAndMandatoryError.NotWellModeledSubsetAndMandatoryErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -17764,19 +16472,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifyingInstanceHasObjectifiedInstanceRequiredError.ObjectTypeInstanceDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifyingInstanceHasObjectifiedInstanceRequiredError.ObjectTypeInstanceDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifyingInstanceHasObjectifiedInstanceRequiredError.ObjectifiedInstanceRequiredErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifyingInstanceHasObjectifiedInstanceRequiredError.ObjectifiedInstanceRequiredErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -17836,19 +16532,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedInstanceHasObjectifyingInstanceRequiredError.FactTypeInstanceDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedInstanceHasObjectifyingInstanceRequiredError.FactTypeInstanceDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedInstanceHasObjectifyingInstanceRequiredError.ObjectifyingInstanceRequiredErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedInstanceHasObjectifyingInstanceRequiredError.ObjectifyingInstanceRequiredErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -18042,19 +16726,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooFewRolesError.ReadingDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooFewRolesError.ReadingDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooFewRolesError.TooFewRolesErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooFewRolesError.TooFewRolesErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -18114,19 +16786,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooManyRolesError.ReadingDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooManyRolesError.ReadingDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooManyRolesError.TooManyRolesErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooManyRolesError.TooManyRolesErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -18186,19 +16846,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasExternalConstraintRoleSequenceArityMismatchError.ConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasExternalConstraintRoleSequenceArityMismatchError.ConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasExternalConstraintRoleSequenceArityMismatchError.ArityMismatchErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasExternalConstraintRoleSequenceArityMismatchError.ArityMismatchErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -18258,19 +16906,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresReadingError.FactTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresReadingError.FactTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresReadingError.ReadingRequiredErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresReadingError.ReadingRequiredErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -18330,19 +16966,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresInternalUniquenessConstraintError.FactTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresInternalUniquenessConstraintError.FactTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresInternalUniquenessConstraintError.InternalUniquenessConstraintRequiredErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasFactTypeRequiresInternalUniquenessConstraintError.InternalUniquenessConstraintRequiredErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -18402,19 +17026,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeHasUnspecifiedDataTypeError.ValueTypeHasDataTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeHasUnspecifiedDataTypeError.ValueTypeHasDataTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeHasUnspecifiedDataTypeError.DataTypeNotSpecifiedErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeHasUnspecifiedDataTypeError.DataTypeNotSpecifiedErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -18474,19 +17086,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UniquenessConstraintHasNMinusOneError.ConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UniquenessConstraintHasNMinusOneError.ConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UniquenessConstraintHasNMinusOneError.NMinusOneErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UniquenessConstraintHasNMinusOneError.NMinusOneErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -18655,19 +17255,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasCompatibleRolePlayerTypeError.SetConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasCompatibleRolePlayerTypeError.SetConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasCompatibleRolePlayerTypeError.CompatibleRolePlayerTypeErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasCompatibleRolePlayerTypeError.CompatibleRolePlayerTypeErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -18727,19 +17315,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasSupersetRoleOfSubtypeSubsetConstraintNotSubtypeError.SubsetConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasSupersetRoleOfSubtypeSubsetConstraintNotSubtypeError.SubsetConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasSupersetRoleOfSubtypeSubsetConstraintNotSubtypeError.SupersetRoleOfSubtypeSubsetConstraintNotSubtypeErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubsetConstraintHasSupersetRoleOfSubtypeSubsetConstraintNotSubtypeError.SupersetRoleOfSubtypeSubsetConstraintNotSubtypeErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -18799,19 +17375,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPathRequiredError.RoleSequenceDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPathRequiredError.RoleSequenceDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPathRequiredError.JoinPathRequiredErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ConstraintRoleSequenceHasJoinPathRequiredError.JoinPathRequiredErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -18871,19 +17435,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasRolePlayerRequiredError.RoleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasRolePlayerRequiredError.RoleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasRolePlayerRequiredError.RolePlayerRequiredErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasRolePlayerRequiredError.RolePlayerRequiredErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -18943,19 +17495,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasEntityTypeRequiresReferenceSchemeError.ObjectTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasEntityTypeRequiresReferenceSchemeError.ObjectTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasEntityTypeRequiresReferenceSchemeError.ReferenceSchemeErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasEntityTypeRequiresReferenceSchemeError.ReferenceSchemeErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -19015,19 +17555,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintMinMaxError.FrequencyConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintMinMaxError.FrequencyConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintMinMaxError.FrequencyConstraintMinMaxErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintMinMaxError.FrequencyConstraintMinMaxErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -19087,19 +17615,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintExactlyOneError.FrequencyConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintExactlyOneError.FrequencyConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintExactlyOneError.FrequencyConstraintExactlyOneErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintExactlyOneError.FrequencyConstraintExactlyOneErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -19159,19 +17675,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintNonRestrictiveRangeError.FrequencyConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintNonRestrictiveRangeError.FrequencyConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintNonRestrictiveRangeError.FrequencyConstraintNonRestrictiveRangeErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintNonRestrictiveRangeError.FrequencyConstraintNonRestrictiveRangeErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -19231,19 +17735,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasReadingRequiresUserModificationError.ReadingDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasReadingRequiresUserModificationError.ReadingDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasReadingRequiresUserModificationError.RequiresUserModificationErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasReadingRequiresUserModificationError.RequiresUserModificationErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -21739,8 +20231,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetIsPrimaryForReadingOrderValue()
 					// method on the domain class.
 					element.SetIsPrimaryForReadingOrderValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -21920,8 +20411,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetIsPrimaryForFactTypeValue()
 					// method on the domain class.
 					element.SetIsPrimaryForFactTypeValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -21983,19 +20473,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooManyRolesError.TooManyRolesErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooManyRolesError.TooManyRolesErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooManyRolesError.ReadingDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooManyRolesError.ReadingDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -22015,19 +20493,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooFewRolesError.TooFewRolesErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooFewRolesError.TooFewRolesErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooFewRolesError.ReadingDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasTooFewRolesError.ReadingDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -22047,19 +20513,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasReadingRequiresUserModificationError.RequiresUserModificationErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasReadingRequiresUserModificationError.RequiresUserModificationErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasReadingRequiresUserModificationError.ReadingDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ReadingHasReadingRequiresUserModificationError.ReadingDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -22190,8 +20644,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetReadingTextValue()
 					// method on the domain class.
 					element.SetReadingTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -22293,10 +20746,10 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of Modality domain property.
-		/// The constraint Modality.
-		///     Alethic modality means the constraint is structurally enforced and data
-		/// violating the constraint cannot be entered in the system;
-		///     Deontic modality means that data violating the constraint can be recorded.
+		/// The constraint Modality.,    Alethic modality means the constraint is
+		/// structurally enforced and data violating the constraint cannot be entered in the
+		/// system;,    Deontic modality means that data violating the constraint can be
+		/// recorded.
 		/// </summary>
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraint/Modality.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
 		[DslDesign::DescriptionResource("ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraint/Modality.Description", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -22379,9 +20832,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of DefinitionText domain property.
-		/// An informal description of this constraint.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Informal Description Editor' tool window.
+		/// An informal description of this constraint.,    To insert new lines, use
+		/// Control-Enter in the dropdown editor, or open the 'ORM Informal Description
+		/// Editor' tool window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Definition>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -22458,8 +20911,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetDefinitionTextValue()
 					// method on the domain class.
 					element.SetDefinitionTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -22474,9 +20926,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of NoteText domain property.
-		/// A note to associate with this constraint.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Notes Editor' tool window.
+		/// A note to associate with this constraint.,    To insert new lines, use
+		/// Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool
+		/// window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Note>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -22553,8 +21005,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNoteTextValue()
 					// method on the domain class.
 					element.SetNoteTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -22570,15 +21021,11 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		/// <summary>
 		/// Gets or sets the value of Text domain property.
 		/// Set the ranges for this cardinality constraint. The following patterns are
-		/// recognized:
-		/// 
-		/// Range with a zero lower bound: 0..n, ..n, &lt;n, &lt;=n
-		/// Range with no upper bound: &gt;n, &gt;=n, n..
-		/// Fixed range: n..m
-		/// 
-		/// Cardinality supports multiple non-overlapping ranges and single values. A range
-		/// of 0 indicates that an empty population is allowed. For example, 0,4.. will
-		/// allow either an empty population or a population with four or more instances.
+		/// recognized:,,Range with a zero lower bound: 0..n, ..n, <n, <=n,Range with no
+		/// upper bound: >n, >=n, n..,Fixed range: n..m,,Cardinality supports multiple
+		/// non-overlapping ranges and single values. A range of 0 indicates that an empty
+		/// population is allowed. For example, 0,4.. will allow either an empty population
+		/// or a population with four or more instances.
 		/// </summary>
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraint/Text.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
 		[DslDesign::DescriptionResource("ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraint/Text.Description", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -22653,8 +21100,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetTextValue()
 					// method on the domain class.
 					element.SetTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -22745,8 +21191,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetTextChangedValue()
 					// method on the domain class.
 					element.SetTextChangedValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -22784,19 +21229,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasRangeOverlapError.CardinalityRangeOverlapErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasRangeOverlapError.CardinalityRangeOverlapErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasRangeOverlapError.CardinalityConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasRangeOverlapError.CardinalityConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -22836,19 +21269,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasDefinition.DefinitionDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasDefinition.DefinitionDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasDefinition.CardinalityConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasDefinition.CardinalityConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -22868,19 +21289,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasNote.NoteDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasNote.NoteDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasNote.CardinalityConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasNote.CardinalityConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -22940,19 +21349,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCardinalityConstraint.ObjectTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCardinalityConstraint.ObjectTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCardinalityConstraint.CardinalityConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCardinalityConstraint.CardinalityConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -23012,19 +21409,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UnaryRoleHasCardinalityConstraint.UnaryRoleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UnaryRoleHasCardinalityConstraint.UnaryRoleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UnaryRoleHasCardinalityConstraint.CardinalityConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.UnaryRoleHasCardinalityConstraint.CardinalityConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -23880,19 +22265,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMaxValueMismatchError.MaxValueMismatchErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMaxValueMismatchError.MaxValueMismatchErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMaxValueMismatchError.ValueRangeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMaxValueMismatchError.ValueRangeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -23912,19 +22285,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMinValueMismatchError.MinValueMismatchErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMinValueMismatchError.MinValueMismatchErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMinValueMismatchError.ValueRangeDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMinValueMismatchError.ValueRangeDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -23984,19 +22345,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeHasValueConstraint.ValueTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeHasValueConstraint.ValueTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeHasValueConstraint.ValueConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeHasValueConstraint.ValueConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -24056,19 +22405,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasValueConstraint.RoleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasValueConstraint.RoleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasValueConstraint.ValueConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RoleHasValueConstraint.ValueConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -24129,19 +22466,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasValueConstraint.PathedRoleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasValueConstraint.PathedRoleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasValueConstraint.ValueConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.PathedRoleHasValueConstraint.ValueConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -24202,19 +22527,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathRootHasValueConstraint.PathRootDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathRootHasValueConstraint.PathRootDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathRootHasValueConstraint.ValueConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RolePathRootHasValueConstraint.ValueConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -24258,9 +22571,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of DefinitionText domain property.
-		/// An informal description of this constraint.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Informal Description Editor' tool window.
+		/// An informal description of this constraint.,    To insert new lines, use
+		/// Control-Enter in the dropdown editor, or open the 'ORM Informal Description
+		/// Editor' tool window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Definition>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -24337,8 +22650,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetDefinitionTextValue()
 					// method on the domain class.
 					element.SetDefinitionTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -24353,9 +22665,9 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of NoteText domain property.
-		/// A note to associate with this constraint.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Notes Editor' tool window.
+		/// A note to associate with this constraint.,    To insert new lines, use
+		/// Control-Enter in the dropdown editor, or open the 'ORM Notes Editor' tool
+		/// window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Note>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -24432,8 +22744,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNoteTextValue()
 					// method on the domain class.
 					element.SetNoteTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -24448,12 +22759,11 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of Text domain property.
-		/// The range of possible values.
-		///     To specify a range, use '..' between the range endpoints, square brackets to
-		/// specify a closed endpoint, and parentheses to specify an open endpoint. Commas
-		/// are used to entered multiple ranges or discrete values.
-		///     Example: {[10..20), 30} specifies all values between 10 and 20 (but not
-		/// including 20) and the value 30.
+		/// The range of possible values.,    To specify a range, use '..' between the range
+		/// endpoints, square brackets to specify a closed endpoint, and parentheses to
+		/// specify an open endpoint. Commas are used to entered multiple ranges or discrete
+		/// values.,    Example: {[10..20), 30} specifies all values between 10 and 20 (but
+		/// not including 20) and the value 30.
 		/// </summary>
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraint/Text.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
 		[DslDesign::DescriptionResource("ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraint/Text.Description", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -24528,8 +22838,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetTextValue()
 					// method on the domain class.
 					element.SetTextValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -24620,8 +22929,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetTextChangedValue()
 					// method on the domain class.
 					element.SetTextChangedValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -24679,19 +22987,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasDefinition.DefinitionDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasDefinition.DefinitionDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasDefinition.ValueConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasDefinition.ValueConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -24711,19 +23007,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasNote.NoteDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasNote.NoteDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasNote.ValueConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasNote.ValueConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -24743,19 +23027,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueRangeOverlapError.ValueRangeOverlapErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueRangeOverlapError.ValueRangeOverlapErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueRangeOverlapError.ValueConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueRangeOverlapError.ValueConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -24775,19 +23047,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueTypeDetachedError.ValueTypeDetachedErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueTypeDetachedError.ValueTypeDetachedErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueTypeDetachedError.ValueConstraintDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueTypeDetachedError.ValueConstraintDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -24877,19 +23137,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMinValueMismatchError.ValueRangeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMinValueMismatchError.ValueRangeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMinValueMismatchError.MinValueMismatchErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMinValueMismatchError.MinValueMismatchErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -24949,19 +23197,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMaxValueMismatchError.ValueRangeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMaxValueMismatchError.ValueRangeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMaxValueMismatchError.MaxValueMismatchErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueRangeHasMaxValueMismatchError.MaxValueMismatchErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25021,19 +23257,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasImpliedInternalUniquenessConstraintError.FactTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasImpliedInternalUniquenessConstraintError.FactTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasImpliedInternalUniquenessConstraintError.ImpliedInternalUniquenessConstraintErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasImpliedInternalUniquenessConstraintError.ImpliedInternalUniquenessConstraintErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25093,19 +23317,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintViolatedByUniquenessConstraintError.FrequencyConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintViolatedByUniquenessConstraintError.FrequencyConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintViolatedByUniquenessConstraintError.FrequencyConstraintViolatedByUniquenessConstraintErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FrequencyConstraintHasFrequencyConstraintViolatedByUniquenessConstraintError.FrequencyConstraintViolatedByUniquenessConstraintErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25165,19 +23377,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RingConstraintHasRingConstraintTypeNotSpecifiedError.RingConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RingConstraintHasRingConstraintTypeNotSpecifiedError.RingConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RingConstraintHasRingConstraintTypeNotSpecifiedError.RingConstraintTypeNotSpecifiedErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.RingConstraintHasRingConstraintTypeNotSpecifiedError.RingConstraintTypeNotSpecifiedErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25237,19 +23437,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasOperatorNotSpecifiedError.ValueComparisonConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasOperatorNotSpecifiedError.ValueComparisonConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasOperatorNotSpecifiedError.OperatorNotSpecifiedErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasOperatorNotSpecifiedError.OperatorNotSpecifiedErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25309,19 +23497,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasRolesNotComparableError.ValueComparisonConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasRolesNotComparableError.ValueComparisonConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasRolesNotComparableError.RolesNotComparableErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueComparisonConstraintHasRolesNotComparableError.RolesNotComparableErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25459,9 +23635,8 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of Text domain property.
-		/// The description contents.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Notes Editor' tool window.
+		/// The description contents.,    To insert new lines, use Control-Enter in the
+		/// dropdown editor, or open the 'ORM Notes Editor' tool window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Definition>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -25553,19 +23728,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasDefinition.ModelDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasDefinition.ModelDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasDefinition.DefinitionDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasDefinition.DefinitionDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25585,19 +23748,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasDefinition.ObjectTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasDefinition.ObjectTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasDefinition.DefinitionDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasDefinition.DefinitionDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25617,19 +23768,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDefinition.FactTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDefinition.FactTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDefinition.DefinitionDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDefinition.DefinitionDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25649,19 +23788,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasDefinition.SetConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasDefinition.SetConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasDefinition.DefinitionDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasDefinition.DefinitionDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25681,19 +23808,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasDefinition.SetComparisonConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasDefinition.SetComparisonConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasDefinition.DefinitionDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasDefinition.DefinitionDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25713,19 +23828,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasDefinition.ValueConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasDefinition.ValueConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasDefinition.DefinitionDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasDefinition.DefinitionDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25745,19 +23848,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasDefinition.CardinalityConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasDefinition.CardinalityConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasDefinition.DefinitionDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasDefinition.DefinitionDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25777,19 +23868,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasDefinition.GroupingDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasDefinition.GroupingDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasDefinition.DefinitionDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasDefinition.DefinitionDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25847,9 +23926,8 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of Text domain property.
-		/// The note contents.
-		///     To insert new lines, use Control-Enter in the dropdown editor, or open the
-		/// 'ORM Notes Editor' tool window.
+		/// The note contents.,    To insert new lines, use Control-Enter in the dropdown
+		/// editor, or open the 'ORM Notes Editor' tool window.
 		/// </summary>
 		[global::System.ComponentModel.Editor(typeof(global::ORMSolutions.ORMArchitect.Framework.Design.MultilineTextEditor<global::ORMSolutions.ORMArchitect.Core.ObjectModel.Note>), typeof(global::System.Drawing.Design.UITypeEditor))]
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -25940,19 +24018,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasNote.FactTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasNote.FactTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasNote.NoteDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasNote.NoteDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -25972,19 +24038,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasNote.ObjectTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasNote.ObjectTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasNote.NoteDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasNote.NoteDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26004,19 +24058,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasNote.SetConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasNote.SetConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasNote.NoteDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasNote.NoteDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26036,19 +24078,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasNote.SetComparisonConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasNote.SetComparisonConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasNote.NoteDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasNote.NoteDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26068,19 +24098,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasNote.ValueConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasNote.ValueConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasNote.NoteDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasNote.NoteDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26100,19 +24118,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasNote.CardinalityConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasNote.CardinalityConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasNote.NoteDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasNote.NoteDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26132,19 +24138,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasNote.GroupingDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasNote.GroupingDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasNote.NoteDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGroupingHasNote.NoteDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26164,19 +24158,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasPrimaryNote.ModelDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasPrimaryNote.ModelDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasPrimaryNote.NoteDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ModelHasPrimaryNote.NoteDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26196,19 +24178,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.LeadRolePathHasNote.LeadRolePathDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.LeadRolePathHasNote.LeadRolePathDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.LeadRolePathHasNote.NoteDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.LeadRolePathHasNote.NoteDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26408,19 +24378,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCompatibleSupertypesError.ObjectTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCompatibleSupertypesError.ObjectTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCompatibleSupertypesError.CompatibleSupertypesErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasCompatibleSupertypesError.CompatibleSupertypesErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26480,19 +24438,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasImplicationError.SetConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasImplicationError.SetConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasImplicationError.ImplicationErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraintHasImplicationError.ImplicationErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26512,19 +24458,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasImplicationError.SetComparisonConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasImplicationError.SetComparisonConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasImplicationError.ImplicationErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasImplicationError.ImplicationErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26584,19 +24518,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasEqualityOrSubsetImpliedByMandatoryError.SetComparisonConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasEqualityOrSubsetImpliedByMandatoryError.SetComparisonConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasEqualityOrSubsetImpliedByMandatoryError.EqualityOrSubsetImpliedByMandatoryErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraintHasEqualityOrSubsetImpliedByMandatoryError.EqualityOrSubsetImpliedByMandatoryErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26656,19 +24578,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasPreferredIdentifierRequiresMandatoryError.ObjectTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasPreferredIdentifierRequiresMandatoryError.ObjectTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasPreferredIdentifierRequiresMandatoryError.PreferredIdentifierRequiresMandatoryErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeHasPreferredIdentifierRequiresMandatoryError.PreferredIdentifierRequiresMandatoryErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26728,19 +24638,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueRangeOverlapError.ValueConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueRangeOverlapError.ValueConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueRangeOverlapError.ValueRangeOverlapErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueRangeOverlapError.ValueRangeOverlapErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26800,19 +24698,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueTypeDetachedError.ValueConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueTypeDetachedError.ValueConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueTypeDetachedError.ValueTypeDetachedErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraintHasValueTypeDetachedError.ValueTypeDetachedErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26872,19 +24758,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasRangeOverlapError.CardinalityConstraintDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasRangeOverlapError.CardinalityConstraintDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasRangeOverlapError.CardinalityRangeOverlapErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraintHasRangeOverlapError.CardinalityRangeOverlapErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26945,19 +24819,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeDerivationRuleHasDerivationNote.DerivationRuleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeDerivationRuleHasDerivationNote.DerivationRuleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeDerivationRuleHasDerivationNote.DerivationNoteDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeDerivationRuleHasDerivationNote.DerivationNoteDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -26977,19 +24839,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeDerivationRuleHasDerivationNote.DerivationRuleDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeDerivationRuleHasDerivationNote.DerivationRuleDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeDerivationRuleHasDerivationNote.DerivationNoteDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeDerivationRuleHasDerivationNote.DerivationNoteDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -27139,19 +24989,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationExpression.FactTypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationExpression.FactTypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationExpression.DerivationRuleDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeHasDerivationExpression.DerivationRuleDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -27211,19 +25049,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationExpression.SubtypeDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationExpression.SubtypeDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationExpression.DerivationRuleDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.SubtypeHasDerivationExpression.DerivationRuleDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -27267,8 +25093,8 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		
 		/// <summary>
 		/// Gets or sets the value of Name domain property.
-		/// An ordered tuple of values for this instance. If the parent &lt;see
-		/// cref="ObjectType"/&gt; objectifies a &lt;see cref="FactType"/&gt;, then Name returns the
+		/// An ordered tuple of values for this instance. If the parent <see
+		/// cref="ObjectType"/> objectifies a <see cref="FactType"/>, then Name returns the
 		/// FactType population prepended by an external identifier reference.
 		/// </summary>
 		[global::System.ComponentModel.MergableProperty(false)]
@@ -27347,8 +25173,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNameValue()
 					// method on the domain class.
 					element.SetNameValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -27364,7 +25189,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 		/// <summary>
 		/// Gets or sets the value of IdentifierName domain property.
 		/// An ordered tuple of values for this instance, ignores objectification of the
-		/// associated &lt;see cref="ObjectType"/&gt;.
+		/// associated <see cref="ObjectType"/>.
 		/// </summary>
 		[global::System.ComponentModel.MergableProperty(false)]
 		[DslDesign::DisplayNameResource("ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectTypeInstance/IdentifierName.DisplayName", typeof(global::ORMSolutions.ORMArchitect.Core.ObjectModel.ORMCoreDomainModel), "ORMSolutions.ORMArchitect.Core.GeneratedCode.CoreDomainModelResx")]
@@ -27441,8 +25266,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetIdentifierNameValue()
 					// method on the domain class.
 					element.SetIdentifierNameValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -27533,8 +25357,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNameChangedValue()
 					// method on the domain class.
 					element.SetNameChangedValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -27608,19 +25431,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectificationInstance.ObjectifiedInstanceDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectificationInstance.ObjectifiedInstanceDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectificationInstance.ObjectifyingInstanceDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectificationInstance.ObjectifyingInstanceDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -27640,19 +25451,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifyingInstanceHasObjectifiedInstanceRequiredError.ObjectifiedInstanceRequiredErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifyingInstanceHasObjectifiedInstanceRequiredError.ObjectifiedInstanceRequiredErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifyingInstanceHasObjectifiedInstanceRequiredError.ObjectTypeInstanceDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifyingInstanceHasObjectifiedInstanceRequiredError.ObjectTypeInstanceDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -27764,19 +25563,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeInstanceHasTooFewEntityTypeRoleInstancesError.TooFewEntityTypeRoleInstancesErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeInstanceHasTooFewEntityTypeRoleInstancesError.TooFewEntityTypeRoleInstancesErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeInstanceHasTooFewEntityTypeRoleInstancesError.EntityTypeInstanceDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeInstanceHasTooFewEntityTypeRoleInstancesError.EntityTypeInstanceDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -28115,19 +25902,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeInstanceHasCompatibleValueTypeInstanceValueError.CompatibleValueTypeInstanceValueErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeInstanceHasCompatibleValueTypeInstanceValueError.CompatibleValueTypeInstanceValueErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeInstanceHasCompatibleValueTypeInstanceValueError.ValueTypeInstanceDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeInstanceHasCompatibleValueTypeInstanceValueError.ValueTypeInstanceDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -28260,8 +26035,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNameValue()
 					// method on the domain class.
 					element.SetNameValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -28352,8 +26126,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 					// set to CustomStorage. Please provide the SetNameChangedValue()
 					// method on the domain class.
 					element.SetNameChangedValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -28411,19 +26184,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectificationInstance.ObjectifyingInstanceDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectificationInstance.ObjectifyingInstanceDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectificationInstance.ObjectifiedInstanceDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectificationInstance.ObjectifiedInstanceDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -28443,19 +26204,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedInstanceHasObjectifyingInstanceRequiredError.ObjectifyingInstanceRequiredErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedInstanceHasObjectifyingInstanceRequiredError.ObjectifyingInstanceRequiredErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedInstanceHasObjectifyingInstanceRequiredError.FactTypeInstanceDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectifiedInstanceHasObjectifyingInstanceRequiredError.FactTypeInstanceDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -28475,19 +26224,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeInstanceHasTooFewFactTypeRoleInstancesError.TooFewFactTypeRoleInstancesErrorDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeInstanceHasTooFewFactTypeRoleInstancesError.TooFewFactTypeRoleInstancesErrorDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeInstanceHasTooFewFactTypeRoleInstancesError.FactTypeInstanceDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeInstanceHasTooFewFactTypeRoleInstancesError.FactTypeInstanceDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -28547,19 +26284,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeInstanceHasTooFewEntityTypeRoleInstancesError.EntityTypeInstanceDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeInstanceHasTooFewEntityTypeRoleInstancesError.EntityTypeInstanceDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeInstanceHasTooFewEntityTypeRoleInstancesError.TooFewEntityTypeRoleInstancesErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.EntityTypeInstanceHasTooFewEntityTypeRoleInstancesError.TooFewEntityTypeRoleInstancesErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -28619,19 +26344,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeInstanceHasTooFewFactTypeRoleInstancesError.FactTypeInstanceDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeInstanceHasTooFewFactTypeRoleInstancesError.FactTypeInstanceDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeInstanceHasTooFewFactTypeRoleInstancesError.TooFewFactTypeRoleInstancesErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.FactTypeInstanceHasTooFewFactTypeRoleInstancesError.TooFewFactTypeRoleInstancesErrorDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -28691,19 +26404,7 @@ namespace ORMSolutions.ORMArchitect.Core.ObjectModel
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::ModelElement existingSource;
-				if (null != value &&
-					null != (existingSource = DslModeling::DomainRoleInfo.GetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeInstanceHasCompatibleValueTypeInstanceValueError.ValueTypeInstanceDomainRoleId)))
-				{
-					if (existingSource != value)
-					{
-						DslModeling::DomainRoleInfo.SetLinkedElement(value, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeInstanceHasCompatibleValueTypeInstanceValueError.ValueTypeInstanceDomainRoleId, this);
-					}
-				}
-				else
-				{
-					DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeInstanceHasCompatibleValueTypeInstanceValueError.CompatibleValueTypeInstanceValueErrorDomainRoleId, value);
-				}
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::ORMSolutions.ORMArchitect.Core.ObjectModel.ValueTypeInstanceHasCompatibleValueTypeInstanceValueError.CompatibleValueTypeInstanceValueErrorDomainRoleId, value);
 			}
 		}
 		#endregion
