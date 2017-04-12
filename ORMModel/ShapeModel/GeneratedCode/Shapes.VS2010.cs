@@ -168,8 +168,7 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 					// set to CustomStorage. Please provide the SetUpdateCounterValue()
 					// method on the domain class.
 					element.SetUpdateCounterValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -398,8 +397,7 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 					// set to CustomStorage. Please provide the SetExpandRefModeValue()
 					// method on the domain class.
 					element.SetExpandRefModeValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -489,8 +487,7 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 					// set to CustomStorage. Please provide the SetDisplayRelatedTypesValue()
 					// method on the domain class.
 					element.SetDisplayRelatedTypesValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -719,8 +716,7 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 					// set to CustomStorage. Please provide the SetConstraintDisplayPositionValue()
 					// method on the domain class.
 					element.SetConstraintDisplayPositionValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -811,8 +807,7 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 					// set to CustomStorage. Please provide the SetDisplayRoleNamesValue()
 					// method on the domain class.
 					element.SetDisplayRoleNamesValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -904,8 +899,7 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 					// set to CustomStorage. Please provide the SetRoleNameVisibilityChangedValue()
 					// method on the domain class.
 					element.SetRoleNameVisibilityChangedValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -995,8 +989,7 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 					// set to CustomStorage. Please provide the SetDisplayOrientationValue()
 					// method on the domain class.
 					element.SetDisplayOrientationValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -1086,8 +1079,7 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 					// set to CustomStorage. Please provide the SetDisplayRelatedTypesValue()
 					// method on the domain class.
 					element.SetDisplayRelatedTypesValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -1177,8 +1169,7 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 					// set to CustomStorage. Please provide the SetDisplayAsObjectTypeValue()
 					// method on the domain class.
 					element.SetDisplayAsObjectTypeValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -1268,8 +1259,7 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 					// set to CustomStorage. Please provide the SetExpandRefModeValue()
 					// method on the domain class.
 					element.SetExpandRefModeValue(newValue);
-					//ValueChanged(element, oldValue, GetValue(element));
-					ValueChanged(element, oldValue, newValue);
+					ValueChanged(element, oldValue, GetValue(element));
 				}
 			}
 		}
@@ -1395,7 +1385,9 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 	[DslModeling::DomainModelOwner(typeof(global::ORMSolutions.ORMArchitect.Core.ShapeModel.ORMShapeDomainModel))]
 	[global::System.CLSCompliant(true)]
 	[DslModeling::DomainObjectId("87ddaeda-1fd8-4433-bb1e-7482c7f471a7")]
+//	public partial class SubtypeLink : DslDiagrams::NodeShape
 	public partial class SubtypeLink : global::ORMSolutions.ORMArchitect.Core.ShapeModel.ORMDirectBinaryLinkShape
+
 	{
 		#region DiagramElement boilerplate
 		private static DslDiagrams::StyleSet classStyleSet;

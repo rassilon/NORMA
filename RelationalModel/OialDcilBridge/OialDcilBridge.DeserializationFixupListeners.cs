@@ -392,6 +392,7 @@ namespace ORMSolutions.ORMArchitect.ORMAbstractionToConceptualDatabaseBridge
 			{
 				conceptTypeChildPath.Push(relation);
 
+				// Problem finding preferred concept type when connecting an entity as a SubType to LifeForms Entity.
 				List<Column> newColumns = GenerateColumnsForConceptTypePreferredIdentifier(
 					table, tableColumns, conceptTypeChildPath,
 					relation.RelatedConceptType,

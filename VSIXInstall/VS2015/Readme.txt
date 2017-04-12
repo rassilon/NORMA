@@ -1,6 +1,6 @@
 The registry settings in the pkgdef file are mostly generated using the regpkg utility, with a call (after the source is built) from this directory similar to:
 
-"C:\Program Files\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\tools\bin\regpkg" /pkgdeffile:temp.pkgdef ..\..\ORMModel\bin\Debug\ORMSolutions.ORMArchitect.Core.VS2015.dll
+"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\tools\bin\regpkg" /pkgdeffile:temp.pkgdef ..\..\ORMModel\bin\Debug\ORMSolutions.ORMArchitect.Core.VS2015.dll
 
 The InstalledProducts and FontAndColors keys at the end of ORMDesigner.pkgdeg are not generated and must be maintained with a hand merge of the generated file. The package name (the default value for the primary package key) is also hand generated and should be maintained (this is shown when the package is first installed).
 

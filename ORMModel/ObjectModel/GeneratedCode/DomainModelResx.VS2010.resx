@@ -350,8 +350,7 @@
     <comment>DisplayName for DomainClass &apos;ElementGrouping&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGrouping/DefinitionText.Description" xml:space="preserve">
-    <value>An informal description of this group.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
+    <value>An informal description of this group.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;ElementGrouping&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGrouping/DefinitionText.DisplayName" xml:space="preserve">
@@ -363,8 +362,7 @@
     <comment>Category for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;ElementGrouping&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGrouping/NoteText.Description" xml:space="preserve">
-    <value>A note to associate with this group.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
+    <value>A note to associate with this group.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;NoteText&apos; on DomainClass &apos;ElementGrouping&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGrouping/NoteText.DisplayName" xml:space="preserve">
@@ -376,10 +374,7 @@
     <comment>Category for DomainProperty &apos;NoteText&apos; on DomainClass &apos;ElementGrouping&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGrouping/TypeCompliance.Description" xml:space="preserve">
-    <value>Specify the level of GroupType compliance for elements in this group.
-    Not Excluded: Allow elements not explicitly excluded by a selected GroupType.
-    Approved by Some Type: Allow elements explicitly approved by at least one GroupType.
-    Approved by All Types: Allow elements explicitly approved by all selected GroupTypes.</value>
+    <value>Specify the level of GroupType compliance for elements in this group.,    Not Excluded: Allow elements not explicitly excluded by a selected GroupType.,    Approved by Some Type: Allow elements explicitly approved by at least one GroupType.,    Approved by All Types: Allow elements explicitly approved by all selected GroupTypes.</value>
     <comment>Description for DomainProperty &apos;TypeCompliance&apos; on DomainClass &apos;ElementGrouping&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ElementGrouping/TypeCompliance.DisplayName" xml:space="preserve">
@@ -467,8 +462,7 @@
     <comment>DisplayName for DomainClass &apos;ORMModel&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ORMModel/DefinitionText.Description" xml:space="preserve">
-    <value>An informal description of this Model.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
+    <value>An informal description of this Model.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;ORMModel&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ORMModel/DefinitionText.DisplayName" xml:space="preserve">
@@ -476,8 +470,7 @@
     <comment>DisplayName for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;ORMModel&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ORMModel/NoteText.Description" xml:space="preserve">
-    <value>A note to associate with this Model.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
+    <value>A note to associate with this Model.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;NoteText&apos; on DomainClass &apos;ORMModel&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ORMModel/NoteText.DisplayName" xml:space="preserve">
@@ -501,8 +494,7 @@
     <comment>DisplayName for DomainProperty &apos;IsExternal&apos; on DomainClass &apos;ObjectType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/DefinitionText.Description" xml:space="preserve">
-    <value>An informal description of this ObjectType.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
+    <value>An informal description of this ObjectType.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;ObjectType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/DefinitionText.DisplayName" xml:space="preserve">
@@ -510,8 +502,7 @@
     <comment>DisplayName for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;ObjectType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/NoteText.Description" xml:space="preserve">
-    <value>A note to associate with this ObjectType.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
+    <value>A note to associate with this ObjectType.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;NoteText&apos; on DomainClass &apos;ObjectType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/NoteText.DisplayName" xml:space="preserve">
@@ -551,8 +542,7 @@
     <comment>DisplayName for DomainProperty &apos;DataTypeLength&apos; on DomainClass &apos;ObjectType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/ReferenceModeDisplay.Description" xml:space="preserve">
-    <value>The reference mode pattern for the EntityType.
-    If the desired reference mode pattern is not specified in the dropdown, then a new pattern can be entered. The type of a new reference mode pattern is set by prepending a &apos;.&apos; for a popular reference mode, appending a &apos;:&apos; for a unit-based reference mode, and applying no decorators for a general reference mode. Reference mode settings can also be managed with the &apos;ORM Reference Mode Editor&apos; tool window.</value>
+    <value>The reference mode pattern for the EntityType.,    If the desired reference mode pattern is not specified in the dropdown, then a new pattern can be entered. The type of a new reference mode pattern is set by prepending a &apos;.&apos; for a popular reference mode, appending a &apos;:&apos; for a unit-based reference mode, and applying no decorators for a general reference mode. Reference mode settings can also be managed with the &apos;ORM Reference Mode Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;ReferenceModeDisplay&apos; on DomainClass &apos;ObjectType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/ReferenceModeDisplay.DisplayName" xml:space="preserve">
@@ -576,9 +566,7 @@
     <comment>DisplayName for DomainProperty &apos;ReferenceModeDecoratedString&apos; on DomainClass &apos;ObjectType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/ValueRangeText.Description" xml:space="preserve">
-    <value>Restrict the range of possible values for instances of this ObjectType.
-    To specify a range, use &apos;..&apos; between the range endpoints, square brackets to specify a closed endpoint, and parentheses to specify an open endpoint. Commas are used to entered multiple ranges or discrete values.
-    Example: {[10..20), 30} specifies all values between 10 and 20 (but not including 20) and the value 30.</value>
+    <value>Restrict the range of possible values for instances of this ObjectType.,    To specify a range, use &apos;..&apos; between the range endpoints, square brackets to specify a closed endpoint, and parentheses to specify an open endpoint. Commas are used to entered multiple ranges or discrete values.,    Example: {[10..20), 30} specifies all values between 10 and 20 (but not including 20) and the value 30.</value>
     <comment>Description for DomainProperty &apos;ValueRangeText&apos; on DomainClass &apos;ObjectType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/ValueRangeText.DisplayName" xml:space="preserve">
@@ -586,8 +574,7 @@
     <comment>DisplayName for DomainProperty &apos;ValueRangeText&apos; on DomainClass &apos;ObjectType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/ValueTypeValueRangeText.Description" xml:space="preserve">
-    <value>The ValueRange property for the ValueType that identifies this EntityType.
-    The ValueRange property of an EntityType is applied to the identifying role, not directly to the identifying ValueType. This allows EntityType ValueRanges to be specified independently for multiple EntityTypes identified with the same unit-based or general reference mode patterns.</value>
+    <value>The ValueRange property for the ValueType that identifies this EntityType.,    The ValueRange property of an EntityType is applied to the identifying role, not directly to the identifying ValueType. This allows EntityType ValueRanges to be specified independently for multiple EntityTypes identified with the same unit-based or general reference mode patterns.</value>
     <comment>Description for DomainProperty &apos;ValueTypeValueRangeText&apos; on DomainClass &apos;ObjectType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/ValueTypeValueRangeText.DisplayName" xml:space="preserve">
@@ -611,8 +598,7 @@
     <comment>DisplayName for DomainProperty &apos;IsSupertypePersonal&apos; on DomainClass &apos;ObjectType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/TreatAsPersonal.Description" xml:space="preserve">
-    <value>Does this ObjectType represent a person instead of a thing?
-    Used as a verbalization directive to render references to this type using a personal pronoun (&apos;who&apos; instead of &apos;that&apos;).</value>
+    <value>Does this ObjectType represent a person instead of a thing?,    Used as a verbalization directive to render references to this type using a personal pronoun (&apos;who&apos; instead of &apos;that&apos;).</value>
     <comment>Description for DomainProperty &apos;TreatAsPersonal&apos; on DomainClass &apos;ObjectType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ObjectType/TreatAsPersonal.DisplayName" xml:space="preserve">
@@ -660,8 +646,7 @@
     <comment>DisplayName for DomainProperty &apos;IsExternal&apos; on DomainClass &apos;FactType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.FactType/DefinitionText.Description" xml:space="preserve">
-    <value>An informal description of this FactType.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
+    <value>An informal description of this FactType.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;FactType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.FactType/DefinitionText.DisplayName" xml:space="preserve">
@@ -669,8 +654,7 @@
     <comment>DisplayName for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;FactType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.FactType/NoteText.Description" xml:space="preserve">
-    <value>A note to associate with this FactType.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
+    <value>A note to associate with this FactType.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;NoteText&apos; on DomainClass &apos;FactType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.FactType/NoteText.DisplayName" xml:space="preserve">
@@ -678,9 +662,7 @@
     <comment>DisplayName for DomainProperty &apos;NoteText&apos; on DomainClass &apos;FactType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.FactType/Name.Description" xml:space="preserve">
-    <value>The name for this FactType.
-    If the Name property is read-only, then it is a generated name based on primary reading.
-    If the Name property is editable, then it is the name of an explicit or implicit objectifying EntityType. The editable name can be reset to match the generated name by clearing the property value.</value>
+    <value>The name for this FactType.,    If the Name property is read-only, then it is a generated name based on primary reading.,    If the Name property is editable, then it is the name of an explicit or implicit objectifying EntityType. The editable name can be reset to match the generated name by clearing the property value.</value>
     <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;FactType&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.FactType/Name.DisplayName" xml:space="preserve">
@@ -784,9 +766,7 @@
     <comment>DisplayName for DomainProperty &apos;Multiplicity&apos; on DomainClass &apos;Role&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.Role/ValueRangeText.Description" xml:space="preserve">
-    <value>Restrict the range of possible values for instances of the RolePlayer ObjectType.
-    To specify a range, use &apos;..&apos; between the range endpoints, square brackets to specify a closed endpoint, and parentheses to specify an open endpoint. Commas are used to entered multiple ranges or discrete values.
-    Example: {[10..20), 30} specifies all values between 10 and 20 (but not including 20) and the value 30.</value>
+    <value>Restrict the range of possible values for instances of the RolePlayer ObjectType.,    To specify a range, use &apos;..&apos; between the range endpoints, square brackets to specify a closed endpoint, and parentheses to specify an open endpoint. Commas are used to entered multiple ranges or discrete values.,    Example: {[10..20), 30} specifies all values between 10 and 20 (but not including 20) and the value 30.</value>
     <comment>Description for DomainProperty &apos;ValueRangeText&apos; on DomainClass &apos;Role&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.Role/ValueRangeText.DisplayName" xml:space="preserve">
@@ -802,9 +782,7 @@
     <comment>DisplayName for DomainProperty &apos;MandatoryConstraintName&apos; on DomainClass &apos;Role&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.Role/MandatoryConstraintModality.Description" xml:space="preserve">
-    <value>The Modality of the simple mandatory constraint on this Role.
-    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;
-    Deontic modality means that data violating the constraint can be recorded.</value>
+    <value>The Modality of the simple mandatory constraint on this Role.,    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;,    Deontic modality means that data violating the constraint can be recorded.</value>
     <comment>Description for DomainProperty &apos;MandatoryConstraintModality&apos; on DomainClass &apos;Role&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.Role/MandatoryConstraintModality.DisplayName" xml:space="preserve">
@@ -820,8 +798,7 @@
     <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Role&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.Role/ObjectificationOppositeRoleName.Description" xml:space="preserve">
-    <value>The Name of the implied Role attached to the objectifying EntityType.
-    An implied binary FactType is created relating the objectifying EntityType to each of the role players of an objectified FactType. Binary FactTypes with a spanning internal uniqueness constraint and ternary (or higher arity) FactTypes are automatically objectified.</value>
+    <value>The Name of the implied Role attached to the objectifying EntityType.,    An implied binary FactType is created relating the objectifying EntityType to each of the role players of an objectified FactType. Binary FactTypes with a spanning internal uniqueness constraint and ternary (or higher arity) FactTypes are automatically objectified.</value>
     <comment>Description for DomainProperty &apos;ObjectificationOppositeRoleName&apos; on DomainClass &apos;Role&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.Role/ObjectificationOppositeRoleName.DisplayName" xml:space="preserve">
@@ -893,9 +870,7 @@
     <comment>DisplayName for DomainClass &apos;SetComparisonConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint/Modality.Description" xml:space="preserve">
-    <value>The constraint Modality.
-    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;
-    Deontic modality means that data violating the constraint can be recorded.</value>
+    <value>The constraint Modality.,    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;,    Deontic modality means that data violating the constraint can be recorded.</value>
     <comment>Description for DomainProperty &apos;Modality&apos; on DomainClass &apos;SetComparisonConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint/Modality.DisplayName" xml:space="preserve">
@@ -903,8 +878,7 @@
     <comment>DisplayName for DomainProperty &apos;Modality&apos; on DomainClass &apos;SetComparisonConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint/DefinitionText.Description" xml:space="preserve">
-    <value>An informal description of this constraint.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
+    <value>An informal description of this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;SetComparisonConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint/DefinitionText.DisplayName" xml:space="preserve">
@@ -912,8 +886,7 @@
     <comment>DisplayName for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;SetComparisonConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint/NoteText.Description" xml:space="preserve">
-    <value>A note to associate with this constraint.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
+    <value>A note to associate with this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;NoteText&apos; on DomainClass &apos;SetComparisonConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.SetComparisonConstraint/NoteText.DisplayName" xml:space="preserve">
@@ -1001,8 +974,7 @@
     <comment>DisplayName for DomainClass &apos;UniquenessConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.UniquenessConstraint/IsPreferred.Description" xml:space="preserve">
-    <value>Is this the preferred identifier for the EntityType role player of the opposite role(s)?
-    The opposite role player of an internal constraint on an objectified FactType is the objectifying EntityType. Binary FactTypes with a spanning internal uniqueness constraint and ternary (or higher arity) FactTypes are automatically objectified.</value>
+    <value>Is this the preferred identifier for the EntityType role player of the opposite role(s)?,    The opposite role player of an internal constraint on an objectified FactType is the objectifying EntityType. Binary FactTypes with a spanning internal uniqueness constraint and ternary (or higher arity) FactTypes are automatically objectified.</value>
     <comment>Description for DomainProperty &apos;IsPreferred&apos; on DomainClass &apos;UniquenessConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.UniquenessConstraint/IsPreferred.DisplayName" xml:space="preserve">
@@ -1066,9 +1038,7 @@
     <comment>DisplayName for DomainClass &apos;SetConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraint/Modality.Description" xml:space="preserve">
-    <value>The constraint Modality.
-    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;
-    Deontic modality means that data violating the constraint can be recorded.</value>
+    <value>The constraint Modality.,    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;,    Deontic modality means that data violating the constraint can be recorded.</value>
     <comment>Description for DomainProperty &apos;Modality&apos; on DomainClass &apos;SetConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraint/Modality.DisplayName" xml:space="preserve">
@@ -1076,8 +1046,7 @@
     <comment>DisplayName for DomainProperty &apos;Modality&apos; on DomainClass &apos;SetConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraint/DefinitionText.Description" xml:space="preserve">
-    <value>An informal description of this constraint.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
+    <value>An informal description of this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;SetConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraint/DefinitionText.DisplayName" xml:space="preserve">
@@ -1085,8 +1054,7 @@
     <comment>DisplayName for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;SetConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraint/NoteText.Description" xml:space="preserve">
-    <value>A note to associate with this constraint.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
+    <value>A note to associate with this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;NoteText&apos; on DomainClass &apos;SetConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.SetConstraint/NoteText.DisplayName" xml:space="preserve">
@@ -1142,8 +1110,7 @@
     <comment>DisplayName for DomainClass &apos;LeadRolePath&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.LeadRolePath/NoteText.Description" xml:space="preserve">
-    <value>A note to associate with this path.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
+    <value>A note to associate with this path.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;NoteText&apos; on DomainClass &apos;LeadRolePath&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.LeadRolePath/NoteText.DisplayName" xml:space="preserve">
@@ -2247,9 +2214,7 @@
     <comment>DisplayName for DomainClass &apos;CardinalityConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraint/Modality.Description" xml:space="preserve">
-    <value>The constraint Modality.
-    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;
-    Deontic modality means that data violating the constraint can be recorded.</value>
+    <value>The constraint Modality.,    Alethic modality means the constraint is structurally enforced and data violating the constraint cannot be entered in the system;,    Deontic modality means that data violating the constraint can be recorded.</value>
     <comment>Description for DomainProperty &apos;Modality&apos; on DomainClass &apos;CardinalityConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraint/Modality.DisplayName" xml:space="preserve">
@@ -2257,8 +2222,7 @@
     <comment>DisplayName for DomainProperty &apos;Modality&apos; on DomainClass &apos;CardinalityConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraint/DefinitionText.Description" xml:space="preserve">
-    <value>An informal description of this constraint.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
+    <value>An informal description of this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;CardinalityConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraint/DefinitionText.DisplayName" xml:space="preserve">
@@ -2266,8 +2230,7 @@
     <comment>DisplayName for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;CardinalityConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraint/NoteText.Description" xml:space="preserve">
-    <value>A note to associate with this constraint.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
+    <value>A note to associate with this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;NoteText&apos; on DomainClass &apos;CardinalityConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraint/NoteText.DisplayName" xml:space="preserve">
@@ -2275,13 +2238,7 @@
     <comment>DisplayName for DomainProperty &apos;NoteText&apos; on DomainClass &apos;CardinalityConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraint/Text.Description" xml:space="preserve">
-    <value>Set the ranges for this cardinality constraint. The following patterns are recognized:
-
-Range with a zero lower bound: 0..n, ..n, &lt;n, &lt;=n
-Range with no upper bound: &gt;n, &gt;=n, n..
-Fixed range: n..m
-
-Cardinality supports multiple non-overlapping ranges and single values. A range of 0 indicates that an empty population is allowed. For example, 0,4.. will allow either an empty population or a population with four or more instances.</value>
+    <value>Set the ranges for this cardinality constraint. The following patterns are recognized:,,Range with a zero lower bound: 0..n, ..n, &lt;n, &lt;=n,Range with no upper bound: &gt;n, &gt;=n, n..,Fixed range: n..m,,Cardinality supports multiple non-overlapping ranges and single values. A range of 0 indicates that an empty population is allowed. For example, 0,4.. will allow either an empty population or a population with four or more instances.</value>
     <comment>Description for DomainProperty &apos;Text&apos; on DomainClass &apos;CardinalityConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.CardinalityConstraint/Text.DisplayName" xml:space="preserve">
@@ -2433,8 +2390,7 @@ Cardinality supports multiple non-overlapping ranges and single values. A range 
     <comment>DisplayName for DomainClass &apos;ValueConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraint/DefinitionText.Description" xml:space="preserve">
-    <value>An informal description of this constraint.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
+    <value>An informal description of this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Informal Description Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;ValueConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraint/DefinitionText.DisplayName" xml:space="preserve">
@@ -2442,8 +2398,7 @@ Cardinality supports multiple non-overlapping ranges and single values. A range 
     <comment>DisplayName for DomainProperty &apos;DefinitionText&apos; on DomainClass &apos;ValueConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraint/NoteText.Description" xml:space="preserve">
-    <value>A note to associate with this constraint.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
+    <value>A note to associate with this constraint.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;NoteText&apos; on DomainClass &apos;ValueConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraint/NoteText.DisplayName" xml:space="preserve">
@@ -2451,9 +2406,7 @@ Cardinality supports multiple non-overlapping ranges and single values. A range 
     <comment>DisplayName for DomainProperty &apos;NoteText&apos; on DomainClass &apos;ValueConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraint/Text.Description" xml:space="preserve">
-    <value>The range of possible values.
-    To specify a range, use &apos;..&apos; between the range endpoints, square brackets to specify a closed endpoint, and parentheses to specify an open endpoint. Commas are used to entered multiple ranges or discrete values.
-    Example: {[10..20), 30} specifies all values between 10 and 20 (but not including 20) and the value 30.</value>
+    <value>The range of possible values.,    To specify a range, use &apos;..&apos; between the range endpoints, square brackets to specify a closed endpoint, and parentheses to specify an open endpoint. Commas are used to entered multiple ranges or discrete values.,    Example: {[10..20), 30} specifies all values between 10 and 20 (but not including 20) and the value 30.</value>
     <comment>Description for DomainProperty &apos;Text&apos; on DomainClass &apos;ValueConstraint&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.ValueConstraint/Text.DisplayName" xml:space="preserve">
@@ -2557,8 +2510,7 @@ Cardinality supports multiple non-overlapping ranges and single values. A range 
     <comment>DisplayName for DomainClass &apos;Definition&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.Definition/Text.Description" xml:space="preserve">
-    <value>The description contents.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
+    <value>The description contents.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;Text&apos; on DomainClass &apos;Definition&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.Definition/Text.DisplayName" xml:space="preserve">
@@ -2574,8 +2526,7 @@ Cardinality supports multiple non-overlapping ranges and single values. A range 
     <comment>DisplayName for DomainClass &apos;Note&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.Note/Text.Description" xml:space="preserve">
-    <value>The note contents.
-    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
+    <value>The note contents.,    To insert new lines, use Control-Enter in the dropdown editor, or open the &apos;ORM Notes Editor&apos; tool window.</value>
     <comment>Description for DomainProperty &apos;Text&apos; on DomainClass &apos;Note&apos;</comment>
   </data>
   <data name="ORMSolutions.ORMArchitect.Core.ObjectModel.Note/Text.DisplayName" xml:space="preserve">

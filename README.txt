@@ -1,3 +1,6 @@
+video on how to use this Norma readme: https://simpleinsure-my.sharepoint.com/personal/marcnoon_userlevelup_com/Documents/Forms/All.aspx?RootFolder=/personal/marcnoon_userlevelup_com/Documents/Shared with Everyone/Norma&FolderCTID=0x012000A786BF2EF8AB724BBD8354906069A40E
+
+
 Neumont Object-Role Modeling Architect
 Copyright © Neumont University. All rights reserved.
 Copyright © ORM Solutions, LLC. All rights reserved.

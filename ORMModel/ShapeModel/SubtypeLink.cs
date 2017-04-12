@@ -211,6 +211,14 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 				}
 			}
 		}
+
+		public override SizeD GeometryDecoratorToSize
+		{
+			get
+			{
+				return base.GeometryDecoratorToSize;
+			}
+		}
 		/// <summary>
 		/// Draw an arrow on the subtype end
 		/// </summary>
@@ -429,6 +437,7 @@ namespace ORMSolutions.ORMArchitect.Core.ShapeModel
 		protected new void ConfiguringAsChildOf(NodeShape parentShape, bool createdDuringViewFixup)
 		{
 			base.ConfiguringAsChildOf(parentShape, createdDuringViewFixup);
+			//this.ConfiguringAsChildOf(parentShape, createdDuringViewFixup);
 			Reconfigure(null);
 		}
 		void IConfigureAsChildShape.ConfiguringAsChildOf(NodeShape parentShape, bool createdDuringViewFixup)
